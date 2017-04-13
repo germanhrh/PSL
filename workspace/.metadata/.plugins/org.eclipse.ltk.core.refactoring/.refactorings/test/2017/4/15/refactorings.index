@@ -1,0 +1,7 @@
+1491261756788	Rename field '_expediaConstant'
+1491261817042	Rename field '_flightsSearch'
+1491277433787	Rename field 'DEPARTURE_PLACE'
+1491277524276	Rename field 'ARRIVE_PLACE'
+1491277584638	Rename field 'DEPARTING_DATE'
+1491280265581	Rename method 'testSearchByBasicFilter'
+1491280309437	Rename method 'testSortHighestPriceSearch'

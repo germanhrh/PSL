@@ -1,0 +1,182 @@
+package actions;
+
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import page.AddCita;
+import page.AddDoctor;
+import page.AddPaciente;
+import page.Inicio;
+import util.HerokuappConstant;
+
+
+public class Action {
+	
+	private AddPaciente _AddPatient = new AddPaciente();
+//	private AddPaciente _mainSearch = new AddPaciente();
+	private HerokuappConstant _HerokuappConstant = new HerokuappConstant();
+	
+//	private HerokuappConstant _expediaConstant = new HerokuappConstant();
+	
+		
+//	private AddPaciente _searchPage = new AddPaciente();
+	private AddDoctor _AddDoctor = new AddDoctor();
+//	private Login _loginPage = new Login();
+//	private MenuPage _menupage = new MenuPage();
+//	private FlightsPage _flightpage = new FlightsPage();
+	
+	private Inicio _Inicio = new Inicio();
+	private AddCita _AddCita = new AddCita();
+	
+	
+//    private	String irregularityListText = new String();
+//	private String irregularityTextShowed = new String();
+//	
+	
+	
+	
+	public void basicSearchTrip(String strDeparturePlace, String strArrivePlace,
+									String strDepartingDate, String strReturningDate, WebDriver driver) throws InterruptedException{
+//		
+		
+		WebDriverWait waitLoading = new WebDriverWait(driver, _HerokuappConstant.getStandardWait());
+		
+		_searchPage.getFlightTypePanelSelector(driver).click();
+		_searchPage.getFlightTypeOptionSelector(driver).click();
+		_searchPage.getFlyingFromSelector(driver).click();
+		_searchPage.getFlyingFromSelector(driver).clear();
+		_searchPage.getFlyingFromSelector(driver).sendKeys(strDeparturePlace);
+		_searchPage.getFlyingToSelector(driver).click();
+		_searchPage.getFlyingToSelector(driver).clear();
+		_searchPage.getFlyingToSelector(driver).sendKeys(strArrivePlace);
+		_searchPage.getFlyDepartureDateSelector(driver).click();
+		_searchPage.getFlyDepartureDateSelector(driver).clear();
+		_searchPage.getFlyDepartureDateSelector(driver).sendKeys(strDepartingDate);
+		_searchPage.getFlyReturnDateSelector(driver).click();
+		_searchPage.getFlyReturnDateSelector(driver).clear();
+		_searchPage.getFlyReturnDateSelector(driver).sendKeys(strReturningDate);
+		_searchPage.getFlySearchButtonSelector(driver).click();		
+		waitLoading.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(_mainSearch.getPrimaryMsgSelectorCssPath())));
+				
+	
+
+//	}
+//	
+//	public void logOutUser(WebDriver driver){
+//			
+//		_menupage.getPageLogOutElement(driver).click();
+//		_menupage.getPageAcceptLogOutElement(driver).click();
+		}
+	
+	public void sortByHighestPrice(WebDriver driver, String strHighestPrice){
+		
+		WebDriverWait waitLoading = new WebDriverWait(driver, _HerokuappConstant.getStandardWait());
+		_flightsSearch.getSortComboBox(driver).click();
+		Select select=new Select(_flightsSearch.getSortComboBox(driver));
+//		if (strHighestPrice == "Price (Lowest)"){
+//			select.selectByIndex(0);
+//		}
+		 if(strHighestPrice == "Price (Highest)"){
+			select.selectByIndex(1);
+		}
+		
+		else if(strHighestPrice == "Duration (Shortest)"){
+			select.selectByIndex(2);
+		}
+		
+		else if(strHighestPrice == "Duration (Longest)"){
+			select.selectByIndex(3);
+		}
+		
+		_flightsSearch.getFlySearchButtonSelector(driver).click();
+		waitLoading.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(_mainSearch.getPrimaryMsgSelectorCssPath())));
+		
+	}
+	
+//	public void waitElements(WebDriver driver){
+//		
+//		WebDriverWait waitFlights = new WebDriverWait(driver, 15);
+//		 waitFlights.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(BLOCK_UI_MSG)));
+//		 waitFlights.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(BLOCK_UI_OVERLAY)));
+//		 waitFlights.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(FLIGHTS_OPTION)));
+//		 
+//		_menupage.getFlightsOption(driver).click();
+//		
+//		waitFlights.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(BLOCK_UI_MSG)));
+//		waitFlights.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(BLOCK_UI_OVERLAY)));
+//		
+//		waitFlights.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IRREGULARITIES_FILTER)));
+//		
+//		
+//		_flightpage.getFilterIrregularities(driver).click();
+//		
+//		waitFlights.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(BLOCK_UI_MSG)));
+//		waitFlights.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(BLOCK_UI_OVERLAY)));
+//		
+//		
+//		_flightpage.getAscendentFilterIrregularities(driver).click();
+//		
+//		waitFlights.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(BLOCK_UI_OVERLAY)));
+//		waitFlights.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(BLOCK_UI_MSG)));
+//		 waitFlights.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(CHECKS_ELEMENT)));
+//		
+//		
+//	}
+//	public String getFlightsDelayed(WebDriver driver) throws InterruptedException{
+//		
+//		 WebDriverWait waitFlights = new WebDriverWait(driver, 15);
+//		 
+//		 waitElements(driver);
+//		 
+//		 waitFlights.until(ExpectedConditions.elementToBeClickable(By.xpath(CHECKS_ELEMENT)));
+//		
+//		_flightpage.checkFlights(driver).get(1).click();
+//		
+//		waitFlights.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(BLOCK_UI_OVERLAY)));
+//		waitFlights.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(BLOCK_UI_MSG)));
+//		waitFlights.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(RED_BUTTON_POST)));
+//		
+//		
+//		_flightpage.getEstablishCause(driver).click();
+//		
+//		waitFlights.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(BLOCK_UI_OVERLAY)));
+//		waitFlights.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(BLOCK_UI_MSG)));
+//		
+//		
+//		
+//	
+//		waitFlights.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IRREGULARITY_ELEMENT1)));
+//		_flightpage.getCause1(driver).click();
+//		
+//		_flightpage.getCommentBox(driver).clear();
+//		_flightpage.getCommentBox(driver).sendKeys(IRREGULARITY_COMMENT);
+//		
+//		irregularityListText = _flightpage.getIrregularityText(driver).getText();
+//		
+//		
+//		_flightpage.postIrregularity(driver).click();
+//		
+//		waitFlights.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(BLOCK_UI_OVERLAY)));
+//		waitFlights.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(ANOTHER_BLOCKING_PAGE)));
+//		
+//		return irregularityListText;
+//		
+//		
+//	}
+//	
+//	public String getIrregularityCauseText(WebDriver driver) throws InterruptedException{
+//		
+//		waitElements(driver);
+//		
+//		irregularityTextShowed = _flightpage.getIrregularityCauseText(driver).getText();
+//		
+//		
+//		return irregularityTextShowed;
+//	}
+	
+
+}

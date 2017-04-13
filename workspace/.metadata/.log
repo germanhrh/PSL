@@ -1,0 +1,1244 @@
+!SESSION 2017-03-30 21:44:24.709 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_CO
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+This is a continuation of log file C:\Users\grivera\workspace\.metadata\.bak_0.log
+Created Time: 2017-03-30 21:44:45.577
+
+!ENTRY org.eclipse.jface 4 0 2017-03-30 21:44:45.577
+!MESSAGE Unable to resolve plug-in "platform:/plugin/org.testng.eclipse/icons/full/main16/testng_blur.gif".
+!STACK 0
+java.io.IOException: Unable to resolve plug-in "platform:/plugin/org.testng.eclipse/icons/full/main16/testng_blur.gif".
+	at org.eclipse.core.internal.runtime.PlatformURLPluginConnection.parse(PlatformURLPluginConnection.java:65)
+	at org.eclipse.core.internal.runtime.PlatformURLPluginConnection.resolve(PlatformURLPluginConnection.java:77)
+	at org.eclipse.core.internal.boot.PlatformURLHandler.openConnection(PlatformURLHandler.java:69)
+	at org.eclipse.osgi.internal.url.URLStreamHandlerProxy.openConnection(URLStreamHandlerProxy.java:114)
+	at java.net.URL.openConnection(Unknown Source)
+	at org.eclipse.core.internal.runtime.PlatformURLConverter.toFileURL(PlatformURLConverter.java:34)
+	at org.eclipse.core.runtime.FileLocator.toFileURL(FileLocator.java:207)
+	at org.eclipse.jface.resource.URLImageDescriptor.getFilePath(URLImageDescriptor.java:219)
+	at org.eclipse.jface.resource.URLImageDescriptor.createImage(URLImageDescriptor.java:283)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:224)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:202)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.getImageFromURI(SWTPartRenderer.java:225)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.getImage(SWTPartRenderer.java:236)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.createTab(StackRenderer.java:877)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.processContents(LazyStackRenderer.java:139)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:654)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:151)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:654)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:151)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:654)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveRenderer.processContents(PerspectiveRenderer.java:49)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:654)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.showTab(PerspectiveStackRenderer.java:82)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:103)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.postProcess(PerspectiveStackRenderer.java:63)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:658)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:151)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:654)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.processContents(WBWRenderer.java:614)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:654)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1061)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:694)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:606)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+
+!ENTRY org.eclipse.core.runtime 4 0 2017-03-30 21:44:45.577
+!MESSAGE Invalid input url:platform:/plugin/org.testng.eclipse/icons/full/main16/testng_blur.gif
+!STACK 0
+java.io.IOException: Unable to resolve plug-in "platform:/plugin/org.testng.eclipse/icons/full/main16/testng_blur.gif".
+	at org.eclipse.core.internal.runtime.PlatformURLPluginConnection.parse(PlatformURLPluginConnection.java:65)
+	at org.eclipse.core.internal.runtime.FindSupport.find(FindSupport.java:290)
+	at org.eclipse.core.runtime.FileLocator.find(FileLocator.java:152)
+	at org.eclipse.jface.resource.URLImageDescriptor.getStream(URLImageDescriptor.java:140)
+	at org.eclipse.jface.resource.URLImageDescriptor.getImageData(URLImageDescriptor.java:105)
+	at org.eclipse.jface.resource.URLImageDescriptor.getImageData(URLImageDescriptor.java:100)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:270)
+	at org.eclipse.jface.resource.URLImageDescriptor.createImage(URLImageDescriptor.java:291)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:224)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:202)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.getImageFromURI(SWTPartRenderer.java:225)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.getImage(SWTPartRenderer.java:236)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.createTab(StackRenderer.java:877)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.processContents(LazyStackRenderer.java:139)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:654)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:151)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:654)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:151)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:654)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveRenderer.processContents(PerspectiveRenderer.java:49)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:654)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.showTab(PerspectiveStackRenderer.java:82)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:103)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.postProcess(PerspectiveStackRenderer.java:63)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:658)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:151)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:654)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:71)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.processContents(WBWRenderer.java:614)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:654)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:746)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:717)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:711)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:695)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1061)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:694)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:606)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-03-30 21:44:50.517
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\grivera'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2017-03-30 21:49:13.471
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: No repository found at http://download.eclipse.org/technology/m2e/releases/1.6/1.6.2.20150902-0002.
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.fail(AbstractRepositoryManager.java:395)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:116)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.fail(CachingRepositoryManager.java:283)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:186)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:389)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.addChild(CompositeMetadataRepository.java:166)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.<init>(CompositeMetadataRepository.java:106)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:122)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:116)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:339)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:146)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:389)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.addChild(CompositeMetadataRepository.java:166)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.<init>(CompositeMetadataRepository.java:106)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:122)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:116)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:339)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:146)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:389)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.doLoad(LoadMetadataRepositoryJob.java:117)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.runModal(LoadMetadataRepositoryJob.java:102)
+	at org.eclipse.equinox.internal.p2.ui.sdk.PreloadingRepositoryHandler$2.runModal(PreloadingRepositoryHandler.java:83)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:177)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1000 2017-03-30 21:49:13.472
+!MESSAGE No repository found at http://download.eclipse.org/technology/m2e/releases/1.6/1.6.2.20150902-0002.
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2017-03-30 21:50:20.995
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: No repository found at http://download.eclipse.org/technology/m2e/releases/1.5/1.5.1.20150109-1820.
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.fail(AbstractRepositoryManager.java:395)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:116)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.fail(CachingRepositoryManager.java:283)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:186)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:389)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.addChild(CompositeMetadataRepository.java:166)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.<init>(CompositeMetadataRepository.java:106)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:122)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at sun.reflect.GeneratedMethodAccessor64.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:116)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:339)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:146)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:389)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.addChild(CompositeMetadataRepository.java:166)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.<init>(CompositeMetadataRepository.java:106)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:122)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:116)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:339)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:146)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:389)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.doLoad(LoadMetadataRepositoryJob.java:117)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.runModal(LoadMetadataRepositoryJob.java:102)
+	at org.eclipse.equinox.internal.p2.ui.sdk.PreloadingRepositoryHandler$2.runModal(PreloadingRepositoryHandler.java:83)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:177)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1000 2017-03-30 21:50:20.995
+!MESSAGE No repository found at http://download.eclipse.org/technology/m2e/releases/1.5/1.5.1.20150109-1820.
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2017-03-30 21:52:46.733
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: No repository found at http://download.eclipse.org/technology/m2e/releases/1.4/1.4.0.20130601-0317.
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.fail(AbstractRepositoryManager.java:395)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:116)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.fail(CachingRepositoryManager.java:283)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:186)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:389)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.addChild(CompositeMetadataRepository.java:166)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.<init>(CompositeMetadataRepository.java:106)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:122)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at sun.reflect.GeneratedMethodAccessor64.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:116)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:339)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:146)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:389)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.addChild(CompositeMetadataRepository.java:166)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository.<init>(CompositeMetadataRepository.java:106)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:122)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:116)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:339)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:146)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:389)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.doLoad(LoadMetadataRepositoryJob.java:117)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.runModal(LoadMetadataRepositoryJob.java:102)
+	at org.eclipse.equinox.internal.p2.ui.sdk.PreloadingRepositoryHandler$2.runModal(PreloadingRepositoryHandler.java:83)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:177)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1000 2017-03-30 21:52:46.740
+!MESSAGE No repository found at http://download.eclipse.org/technology/m2e/releases/1.4/1.4.0.20130601-0317.
+!SESSION 2017-03-30 21:59:22.293 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_CO
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data file:/C:/Users/grivera/workspace/ -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-03-30 21:59:46.227
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\grivera'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.testng.eclipse 1 0 2017-04-04 19:35:36.914
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\eclipse\plugins\org.testng.eclipse_6.11.0.201703011520\lib\testng-remote.jar C:\Users\grivera\workspace\test\target\test-classes C:\Users\grivera\workspace\test\target\classes C:\Users\grivera\.m2\repository\junit\junit\4.12\junit-4.12.jar C:\Users\grivera\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-java\2.39.0\selenium-java-2.39.0.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-android-driver\2.39.0\selenium-android-driver-2.39.0.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-htmlunit-driver\2.39.0\selenium-htmlunit-driver-2.39.0.jar C:\Users\grivera\.m2\repository\net\sourceforge\htmlunit\htmlunit\2.13\htmlunit-2.13.jar C:\Users\grivera\.m2\repository\xalan\xalan\2.7.1\xalan-2.7.1.jar C:\Users\grivera\.m2\repository\xalan\serializer\2.7.1\serializer-2.7.1.jar C:\Users\grivera\.m2\repository\commons-collections\commons-collections\3.2.1\commons-collections-3.2.1.jar C:\Users\grivera\.m2\repository\org\apache\commons\commons-lang3\3.1\commons-lang3-3.1.jar C:\Users\grivera\.m2\repository\org\apache\httpcomponents\httpmime\4.3.1\httpmime-4.3.1.jar C:\Users\grivera\.m2\repository\net\sourceforge\htmlunit\htmlunit-core-js\2.13\htmlunit-core-js-2.13.jar C:\Users\grivera\.m2\repository\xerces\xercesImpl\2.11.0\xercesImpl-2.11.0.jar C:\Users\grivera\.m2\repository\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar C:\Users\grivera\.m2\repository\net\sourceforge\nekohtml\nekohtml\1.9.19\nekohtml-1.9.19.jar C:\Users\grivera\.m2\repository\net\sourceforge\cssparser\cssparser\0.9.11\cssparser-0.9.11.jar C:\Users\grivera\.m2\repository\org\w3c\css\sac\1.3\sac-1.3.jar C:\Users\grivera\.m2\repository\commons-logging\commons-logging\1.1.3\commons-logging-1.1.3.jar C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-websocket\8.1.12.v20130726\jetty-websocket-8.1.12.v20130726.jar C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-util\8.1.12.v20130726\jetty-util-8.1.12.v20130726.jar C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-io\8.1.12.v20130726\jetty-io-8.1.12.v20130726.jar C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-http\8.1.12.v20130726\jetty-http-8.1.12.v20130726.jar C:\Users\grivera\.m2\repository\org\apache\httpcomponents\httpclient\4.3.1\httpclient-4.3.1.jar C:\Users\grivera\.m2\repository\org\apache\httpcomponents\httpcore\4.3\httpcore-4.3.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\2.39.0\selenium-firefox-driver-2.39.0.jar C:\Users\grivera\.m2\repository\commons-io\commons-io\2.2\commons-io-2.2.jar C:\Users\grivera\.m2\repository\org\apache\commons\commons-exec\1.1\commons-exec-1.1.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\2.39.0\selenium-ie-driver-2.39.0.jar C:\Users\grivera\.m2\repository\net\java\dev\jna\jna\3.4.0\jna-3.4.0.jar C:\Users\grivera\.m2\repository\net\java\dev\jna\platform\3.4.0\platform-3.4.0.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-iphone-driver\2.39.0\selenium-iphone-driver-2.39.0.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\2.39.0\selenium-safari-driver-2.39.0.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-support\2.39.0\selenium-support-2.39.0.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-api\2.39.0\selenium-api-2.39.0.jar C:\Users\grivera\.m2\repository\org\webbitserver\webbit\0.4.14\webbit-0.4.14.jar C:\Users\grivera\.m2\repository\io\netty\netty\3.5.2.Final\netty-3.5.2.Final.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-server\2.39.0\selenium-server-2.39.0.jar C:\Users\grivera\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.48\bcprov-jdk15on-1.48.jar C:\Users\grivera\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.48\bcpkix-jdk15on-1.48.jar C:\Users\grivera\.m2\repository\mx4j\mx4j-tools\3.0.1\mx4j-tools-3.0.1.jar C:\Users\grivera\.m2\repository\org\mortbay\jetty\servlet-api-2.5\6.1.9\servlet-api-2.5-6.1.9.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\jetty-repacked\7.6.1\jetty-repacked-7.6.1.jar C:\Users\grivera\.m2\repository\net\jcip\jcip-annotations\1.0\jcip-annotations-1.0.jar C:\Users\grivera\.m2\repository\org\yaml\snakeyaml\1.8\snakeyaml-1.8.jar C:\Users\grivera\.m2\repository\commons-codec\commons-codec\1.8\commons-codec-1.8.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\2.39.0\selenium-chrome-driver-2.39.0.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\2.39.0\selenium-remote-driver-2.39.0.jar C:\Users\grivera\.m2\repository\cglib\cglib-nodep\2.1_3\cglib-nodep-2.1_3.jar C:\Users\grivera\.m2\repository\org\json\json\20080701\json-20080701.jar C:\Users\grivera\.m2\repository\org\testng\testng\6.9.10\testng-6.9.10.jar C:\Users\grivera\.m2\repository\com\beust\jcommander\1.48\jcommander-1.48.jar C:\Users\grivera\.m2\repository\org\beanshell\bsh\2.0b4\bsh-2.0b4.jar C:\Users\grivera\.m2\repository\com\google\guava\guava\18.0\guava-18.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 55082 -protocol json -d C:\Users\grivera\workspace\test\test-output C:\Users\grivera\AppData\Local\Temp\testng-eclipse--1439016042\testng-customsuite.xml
+java -ea -classpath C:\eclipse\plugins\org.testng.eclipse_6.11.0.201703011520\lib\testng-remote.jar:C:\Users\grivera\workspace\test\target\test-classes:C:\Users\grivera\workspace\test\target\classes:C:\Users\grivera\.m2\repository\junit\junit\4.12\junit-4.12.jar:C:\Users\grivera\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-java\2.39.0\selenium-java-2.39.0.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-android-driver\2.39.0\selenium-android-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-htmlunit-driver\2.39.0\selenium-htmlunit-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\net\sourceforge\htmlunit\htmlunit\2.13\htmlunit-2.13.jar:C:\Users\grivera\.m2\repository\xalan\xalan\2.7.1\xalan-2.7.1.jar:C:\Users\grivera\.m2\repository\xalan\serializer\2.7.1\serializer-2.7.1.jar:C:\Users\grivera\.m2\repository\commons-collections\commons-collections\3.2.1\commons-collections-3.2.1.jar:C:\Users\grivera\.m2\repository\org\apache\commons\commons-lang3\3.1\commons-lang3-3.1.jar:C:\Users\grivera\.m2\repository\org\apache\httpcomponents\httpmime\4.3.1\httpmime-4.3.1.jar:C:\Users\grivera\.m2\repository\net\sourceforge\htmlunit\htmlunit-core-js\2.13\htmlunit-core-js-2.13.jar:C:\Users\grivera\.m2\repository\xerces\xercesImpl\2.11.0\xercesImpl-2.11.0.jar:C:\Users\grivera\.m2\repository\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar:C:\Users\grivera\.m2\repository\net\sourceforge\nekohtml\nekohtml\1.9.19\nekohtml-1.9.19.jar:C:\Users\grivera\.m2\repository\net\sourceforge\cssparser\cssparser\0.9.11\cssparser-0.9.11.jar:C:\Users\grivera\.m2\repository\org\w3c\css\sac\1.3\sac-1.3.jar:C:\Users\grivera\.m2\repository\commons-logging\commons-logging\1.1.3\commons-logging-1.1.3.jar:C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-websocket\8.1.12.v20130726\jetty-websocket-8.1.12.v20130726.jar:C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-util\8.1.12.v20130726\jetty-util-8.1.12.v20130726.jar:C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-io\8.1.12.v20130726\jetty-io-8.1.12.v20130726.jar:C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-http\8.1.12.v20130726\jetty-http-8.1.12.v20130726.jar:C:\Users\grivera\.m2\repository\org\apache\httpcomponents\httpclient\4.3.1\httpclient-4.3.1.jar:C:\Users\grivera\.m2\repository\org\apache\httpcomponents\httpcore\4.3\httpcore-4.3.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\2.39.0\selenium-firefox-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\commons-io\commons-io\2.2\commons-io-2.2.jar:C:\Users\grivera\.m2\repository\org\apache\commons\commons-exec\1.1\commons-exec-1.1.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\2.39.0\selenium-ie-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\net\java\dev\jna\jna\3.4.0\jna-3.4.0.jar:C:\Users\grivera\.m2\repository\net\java\dev\jna\platform\3.4.0\platform-3.4.0.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-iphone-driver\2.39.0\selenium-iphone-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\2.39.0\selenium-safari-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-support\2.39.0\selenium-support-2.39.0.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-api\2.39.0\selenium-api-2.39.0.jar:C:\Users\grivera\.m2\repository\org\webbitserver\webbit\0.4.14\webbit-0.4.14.jar:C:\Users\grivera\.m2\repository\io\netty\netty\3.5.2.Final\netty-3.5.2.Final.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-server\2.39.0\selenium-server-2.39.0.jar:C:\Users\grivera\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.48\bcprov-jdk15on-1.48.jar:C:\Users\grivera\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.48\bcpkix-jdk15on-1.48.jar:C:\Users\grivera\.m2\repository\mx4j\mx4j-tools\3.0.1\mx4j-tools-3.0.1.jar:C:\Users\grivera\.m2\repository\org\mortbay\jetty\servlet-api-2.5\6.1.9\servlet-api-2.5-6.1.9.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\jetty-repacked\7.6.1\jetty-repacked-7.6.1.jar:C:\Users\grivera\.m2\repository\net\jcip\jcip-annotations\1.0\jcip-annotations-1.0.jar:C:\Users\grivera\.m2\repository\org\yaml\snakeyaml\1.8\snakeyaml-1.8.jar:C:\Users\grivera\.m2\repository\commons-codec\commons-codec\1.8\commons-codec-1.8.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\2.39.0\selenium-chrome-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\2.39.0\selenium-remote-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\cglib\cglib-nodep\2.1_3\cglib-nodep-2.1_3.jar:C:\Users\grivera\.m2\repository\org\json\json\20080701\json-20080701.jar:C:\Users\grivera\.m2\repository\org\testng\testng\6.9.10\testng-6.9.10.jar:C:\Users\grivera\.m2\repository\com\beust\jcommander\1.48\jcommander-1.48.jar:C:\Users\grivera\.m2\repository\org\beanshell\bsh\2.0b4\bsh-2.0b4.jar:C:\Users\grivera\.m2\repository\com\google\guava\guava\18.0\guava-18.0.jar org.testng.remote.RemoteTestNG -serport 55082 -protocol json -d C:\Users\grivera\workspace\test\test-output C:\Users\grivera\AppData\Local\Temp\testng-eclipse--1439016042\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2017-04-04 19:37:25.176
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\eclipse\plugins\org.testng.eclipse_6.11.0.201703011520\lib\testng-remote.jar C:\Users\grivera\workspace\test\target\test-classes C:\Users\grivera\workspace\test\target\classes C:\Users\grivera\.m2\repository\junit\junit\4.12\junit-4.12.jar C:\Users\grivera\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-java\2.39.0\selenium-java-2.39.0.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-android-driver\2.39.0\selenium-android-driver-2.39.0.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-htmlunit-driver\2.39.0\selenium-htmlunit-driver-2.39.0.jar C:\Users\grivera\.m2\repository\net\sourceforge\htmlunit\htmlunit\2.13\htmlunit-2.13.jar C:\Users\grivera\.m2\repository\xalan\xalan\2.7.1\xalan-2.7.1.jar C:\Users\grivera\.m2\repository\xalan\serializer\2.7.1\serializer-2.7.1.jar C:\Users\grivera\.m2\repository\commons-collections\commons-collections\3.2.1\commons-collections-3.2.1.jar C:\Users\grivera\.m2\repository\org\apache\commons\commons-lang3\3.1\commons-lang3-3.1.jar C:\Users\grivera\.m2\repository\org\apache\httpcomponents\httpmime\4.3.1\httpmime-4.3.1.jar C:\Users\grivera\.m2\repository\net\sourceforge\htmlunit\htmlunit-core-js\2.13\htmlunit-core-js-2.13.jar C:\Users\grivera\.m2\repository\xerces\xercesImpl\2.11.0\xercesImpl-2.11.0.jar C:\Users\grivera\.m2\repository\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar C:\Users\grivera\.m2\repository\net\sourceforge\nekohtml\nekohtml\1.9.19\nekohtml-1.9.19.jar C:\Users\grivera\.m2\repository\net\sourceforge\cssparser\cssparser\0.9.11\cssparser-0.9.11.jar C:\Users\grivera\.m2\repository\org\w3c\css\sac\1.3\sac-1.3.jar C:\Users\grivera\.m2\repository\commons-logging\commons-logging\1.1.3\commons-logging-1.1.3.jar C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-websocket\8.1.12.v20130726\jetty-websocket-8.1.12.v20130726.jar C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-util\8.1.12.v20130726\jetty-util-8.1.12.v20130726.jar C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-io\8.1.12.v20130726\jetty-io-8.1.12.v20130726.jar C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-http\8.1.12.v20130726\jetty-http-8.1.12.v20130726.jar C:\Users\grivera\.m2\repository\org\apache\httpcomponents\httpclient\4.3.1\httpclient-4.3.1.jar C:\Users\grivera\.m2\repository\org\apache\httpcomponents\httpcore\4.3\httpcore-4.3.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\2.39.0\selenium-firefox-driver-2.39.0.jar C:\Users\grivera\.m2\repository\commons-io\commons-io\2.2\commons-io-2.2.jar C:\Users\grivera\.m2\repository\org\apache\commons\commons-exec\1.1\commons-exec-1.1.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\2.39.0\selenium-ie-driver-2.39.0.jar C:\Users\grivera\.m2\repository\net\java\dev\jna\jna\3.4.0\jna-3.4.0.jar C:\Users\grivera\.m2\repository\net\java\dev\jna\platform\3.4.0\platform-3.4.0.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-iphone-driver\2.39.0\selenium-iphone-driver-2.39.0.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\2.39.0\selenium-safari-driver-2.39.0.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-support\2.39.0\selenium-support-2.39.0.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-api\2.39.0\selenium-api-2.39.0.jar C:\Users\grivera\.m2\repository\org\webbitserver\webbit\0.4.14\webbit-0.4.14.jar C:\Users\grivera\.m2\repository\io\netty\netty\3.5.2.Final\netty-3.5.2.Final.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-server\2.39.0\selenium-server-2.39.0.jar C:\Users\grivera\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.48\bcprov-jdk15on-1.48.jar C:\Users\grivera\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.48\bcpkix-jdk15on-1.48.jar C:\Users\grivera\.m2\repository\mx4j\mx4j-tools\3.0.1\mx4j-tools-3.0.1.jar C:\Users\grivera\.m2\repository\org\mortbay\jetty\servlet-api-2.5\6.1.9\servlet-api-2.5-6.1.9.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\jetty-repacked\7.6.1\jetty-repacked-7.6.1.jar C:\Users\grivera\.m2\repository\net\jcip\jcip-annotations\1.0\jcip-annotations-1.0.jar C:\Users\grivera\.m2\repository\org\yaml\snakeyaml\1.8\snakeyaml-1.8.jar C:\Users\grivera\.m2\repository\commons-codec\commons-codec\1.8\commons-codec-1.8.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\2.39.0\selenium-chrome-driver-2.39.0.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\2.39.0\selenium-remote-driver-2.39.0.jar C:\Users\grivera\.m2\repository\cglib\cglib-nodep\2.1_3\cglib-nodep-2.1_3.jar C:\Users\grivera\.m2\repository\org\json\json\20080701\json-20080701.jar C:\Users\grivera\.m2\repository\org\testng\testng\6.9.10\testng-6.9.10.jar C:\Users\grivera\.m2\repository\com\beust\jcommander\1.48\jcommander-1.48.jar C:\Users\grivera\.m2\repository\org\beanshell\bsh\2.0b4\bsh-2.0b4.jar C:\Users\grivera\.m2\repository\com\google\guava\guava\18.0\guava-18.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 55147 -protocol json -d C:\Users\grivera\workspace\test\test-output C:\Users\grivera\AppData\Local\Temp\testng-eclipse--999847336\testng-customsuite.xml
+java -ea -classpath C:\eclipse\plugins\org.testng.eclipse_6.11.0.201703011520\lib\testng-remote.jar:C:\Users\grivera\workspace\test\target\test-classes:C:\Users\grivera\workspace\test\target\classes:C:\Users\grivera\.m2\repository\junit\junit\4.12\junit-4.12.jar:C:\Users\grivera\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-java\2.39.0\selenium-java-2.39.0.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-android-driver\2.39.0\selenium-android-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-htmlunit-driver\2.39.0\selenium-htmlunit-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\net\sourceforge\htmlunit\htmlunit\2.13\htmlunit-2.13.jar:C:\Users\grivera\.m2\repository\xalan\xalan\2.7.1\xalan-2.7.1.jar:C:\Users\grivera\.m2\repository\xalan\serializer\2.7.1\serializer-2.7.1.jar:C:\Users\grivera\.m2\repository\commons-collections\commons-collections\3.2.1\commons-collections-3.2.1.jar:C:\Users\grivera\.m2\repository\org\apache\commons\commons-lang3\3.1\commons-lang3-3.1.jar:C:\Users\grivera\.m2\repository\org\apache\httpcomponents\httpmime\4.3.1\httpmime-4.3.1.jar:C:\Users\grivera\.m2\repository\net\sourceforge\htmlunit\htmlunit-core-js\2.13\htmlunit-core-js-2.13.jar:C:\Users\grivera\.m2\repository\xerces\xercesImpl\2.11.0\xercesImpl-2.11.0.jar:C:\Users\grivera\.m2\repository\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar:C:\Users\grivera\.m2\repository\net\sourceforge\nekohtml\nekohtml\1.9.19\nekohtml-1.9.19.jar:C:\Users\grivera\.m2\repository\net\sourceforge\cssparser\cssparser\0.9.11\cssparser-0.9.11.jar:C:\Users\grivera\.m2\repository\org\w3c\css\sac\1.3\sac-1.3.jar:C:\Users\grivera\.m2\repository\commons-logging\commons-logging\1.1.3\commons-logging-1.1.3.jar:C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-websocket\8.1.12.v20130726\jetty-websocket-8.1.12.v20130726.jar:C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-util\8.1.12.v20130726\jetty-util-8.1.12.v20130726.jar:C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-io\8.1.12.v20130726\jetty-io-8.1.12.v20130726.jar:C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-http\8.1.12.v20130726\jetty-http-8.1.12.v20130726.jar:C:\Users\grivera\.m2\repository\org\apache\httpcomponents\httpclient\4.3.1\httpclient-4.3.1.jar:C:\Users\grivera\.m2\repository\org\apache\httpcomponents\httpcore\4.3\httpcore-4.3.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\2.39.0\selenium-firefox-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\commons-io\commons-io\2.2\commons-io-2.2.jar:C:\Users\grivera\.m2\repository\org\apache\commons\commons-exec\1.1\commons-exec-1.1.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\2.39.0\selenium-ie-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\net\java\dev\jna\jna\3.4.0\jna-3.4.0.jar:C:\Users\grivera\.m2\repository\net\java\dev\jna\platform\3.4.0\platform-3.4.0.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-iphone-driver\2.39.0\selenium-iphone-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\2.39.0\selenium-safari-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-support\2.39.0\selenium-support-2.39.0.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-api\2.39.0\selenium-api-2.39.0.jar:C:\Users\grivera\.m2\repository\org\webbitserver\webbit\0.4.14\webbit-0.4.14.jar:C:\Users\grivera\.m2\repository\io\netty\netty\3.5.2.Final\netty-3.5.2.Final.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-server\2.39.0\selenium-server-2.39.0.jar:C:\Users\grivera\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.48\bcprov-jdk15on-1.48.jar:C:\Users\grivera\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.48\bcpkix-jdk15on-1.48.jar:C:\Users\grivera\.m2\repository\mx4j\mx4j-tools\3.0.1\mx4j-tools-3.0.1.jar:C:\Users\grivera\.m2\repository\org\mortbay\jetty\servlet-api-2.5\6.1.9\servlet-api-2.5-6.1.9.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\jetty-repacked\7.6.1\jetty-repacked-7.6.1.jar:C:\Users\grivera\.m2\repository\net\jcip\jcip-annotations\1.0\jcip-annotations-1.0.jar:C:\Users\grivera\.m2\repository\org\yaml\snakeyaml\1.8\snakeyaml-1.8.jar:C:\Users\grivera\.m2\repository\commons-codec\commons-codec\1.8\commons-codec-1.8.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\2.39.0\selenium-chrome-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\2.39.0\selenium-remote-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\cglib\cglib-nodep\2.1_3\cglib-nodep-2.1_3.jar:C:\Users\grivera\.m2\repository\org\json\json\20080701\json-20080701.jar:C:\Users\grivera\.m2\repository\org\testng\testng\6.9.10\testng-6.9.10.jar:C:\Users\grivera\.m2\repository\com\beust\jcommander\1.48\jcommander-1.48.jar:C:\Users\grivera\.m2\repository\org\beanshell\bsh\2.0b4\bsh-2.0b4.jar:C:\Users\grivera\.m2\repository\com\google\guava\guava\18.0\guava-18.0.jar org.testng.remote.RemoteTestNG -serport 55147 -protocol json -d C:\Users\grivera\workspace\test\test-output C:\Users\grivera\AppData\Local\Temp\testng-eclipse--999847336\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2017-04-04 19:38:18.786
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\eclipse\plugins\org.testng.eclipse_6.11.0.201703011520\lib\testng-remote.jar C:\Users\grivera\workspace\test\target\test-classes C:\Users\grivera\workspace\test\target\classes C:\Users\grivera\.m2\repository\junit\junit\4.12\junit-4.12.jar C:\Users\grivera\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-java\2.39.0\selenium-java-2.39.0.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-android-driver\2.39.0\selenium-android-driver-2.39.0.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-htmlunit-driver\2.39.0\selenium-htmlunit-driver-2.39.0.jar C:\Users\grivera\.m2\repository\net\sourceforge\htmlunit\htmlunit\2.13\htmlunit-2.13.jar C:\Users\grivera\.m2\repository\xalan\xalan\2.7.1\xalan-2.7.1.jar C:\Users\grivera\.m2\repository\xalan\serializer\2.7.1\serializer-2.7.1.jar C:\Users\grivera\.m2\repository\commons-collections\commons-collections\3.2.1\commons-collections-3.2.1.jar C:\Users\grivera\.m2\repository\org\apache\commons\commons-lang3\3.1\commons-lang3-3.1.jar C:\Users\grivera\.m2\repository\org\apache\httpcomponents\httpmime\4.3.1\httpmime-4.3.1.jar C:\Users\grivera\.m2\repository\net\sourceforge\htmlunit\htmlunit-core-js\2.13\htmlunit-core-js-2.13.jar C:\Users\grivera\.m2\repository\xerces\xercesImpl\2.11.0\xercesImpl-2.11.0.jar C:\Users\grivera\.m2\repository\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar C:\Users\grivera\.m2\repository\net\sourceforge\nekohtml\nekohtml\1.9.19\nekohtml-1.9.19.jar C:\Users\grivera\.m2\repository\net\sourceforge\cssparser\cssparser\0.9.11\cssparser-0.9.11.jar C:\Users\grivera\.m2\repository\org\w3c\css\sac\1.3\sac-1.3.jar C:\Users\grivera\.m2\repository\commons-logging\commons-logging\1.1.3\commons-logging-1.1.3.jar C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-websocket\8.1.12.v20130726\jetty-websocket-8.1.12.v20130726.jar C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-util\8.1.12.v20130726\jetty-util-8.1.12.v20130726.jar C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-io\8.1.12.v20130726\jetty-io-8.1.12.v20130726.jar C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-http\8.1.12.v20130726\jetty-http-8.1.12.v20130726.jar C:\Users\grivera\.m2\repository\org\apache\httpcomponents\httpclient\4.3.1\httpclient-4.3.1.jar C:\Users\grivera\.m2\repository\org\apache\httpcomponents\httpcore\4.3\httpcore-4.3.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\2.39.0\selenium-firefox-driver-2.39.0.jar C:\Users\grivera\.m2\repository\commons-io\commons-io\2.2\commons-io-2.2.jar C:\Users\grivera\.m2\repository\org\apache\commons\commons-exec\1.1\commons-exec-1.1.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\2.39.0\selenium-ie-driver-2.39.0.jar C:\Users\grivera\.m2\repository\net\java\dev\jna\jna\3.4.0\jna-3.4.0.jar C:\Users\grivera\.m2\repository\net\java\dev\jna\platform\3.4.0\platform-3.4.0.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-iphone-driver\2.39.0\selenium-iphone-driver-2.39.0.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\2.39.0\selenium-safari-driver-2.39.0.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-support\2.39.0\selenium-support-2.39.0.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-api\2.39.0\selenium-api-2.39.0.jar C:\Users\grivera\.m2\repository\org\webbitserver\webbit\0.4.14\webbit-0.4.14.jar C:\Users\grivera\.m2\repository\io\netty\netty\3.5.2.Final\netty-3.5.2.Final.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-server\2.39.0\selenium-server-2.39.0.jar C:\Users\grivera\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.48\bcprov-jdk15on-1.48.jar C:\Users\grivera\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.48\bcpkix-jdk15on-1.48.jar C:\Users\grivera\.m2\repository\mx4j\mx4j-tools\3.0.1\mx4j-tools-3.0.1.jar C:\Users\grivera\.m2\repository\org\mortbay\jetty\servlet-api-2.5\6.1.9\servlet-api-2.5-6.1.9.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\jetty-repacked\7.6.1\jetty-repacked-7.6.1.jar C:\Users\grivera\.m2\repository\net\jcip\jcip-annotations\1.0\jcip-annotations-1.0.jar C:\Users\grivera\.m2\repository\org\yaml\snakeyaml\1.8\snakeyaml-1.8.jar C:\Users\grivera\.m2\repository\commons-codec\commons-codec\1.8\commons-codec-1.8.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\2.39.0\selenium-chrome-driver-2.39.0.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\2.39.0\selenium-remote-driver-2.39.0.jar C:\Users\grivera\.m2\repository\cglib\cglib-nodep\2.1_3\cglib-nodep-2.1_3.jar C:\Users\grivera\.m2\repository\org\json\json\20080701\json-20080701.jar C:\Users\grivera\.m2\repository\org\testng\testng\6.9.10\testng-6.9.10.jar C:\Users\grivera\.m2\repository\com\beust\jcommander\1.48\jcommander-1.48.jar C:\Users\grivera\.m2\repository\org\beanshell\bsh\2.0b4\bsh-2.0b4.jar C:\Users\grivera\.m2\repository\com\google\guava\guava\18.0\guava-18.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 55201 -protocol json -d C:\Users\grivera\workspace\test\test-output C:\Users\grivera\AppData\Local\Temp\testng-eclipse--1951118472\testng-customsuite.xml
+java -ea -classpath C:\eclipse\plugins\org.testng.eclipse_6.11.0.201703011520\lib\testng-remote.jar:C:\Users\grivera\workspace\test\target\test-classes:C:\Users\grivera\workspace\test\target\classes:C:\Users\grivera\.m2\repository\junit\junit\4.12\junit-4.12.jar:C:\Users\grivera\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-java\2.39.0\selenium-java-2.39.0.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-android-driver\2.39.0\selenium-android-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-htmlunit-driver\2.39.0\selenium-htmlunit-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\net\sourceforge\htmlunit\htmlunit\2.13\htmlunit-2.13.jar:C:\Users\grivera\.m2\repository\xalan\xalan\2.7.1\xalan-2.7.1.jar:C:\Users\grivera\.m2\repository\xalan\serializer\2.7.1\serializer-2.7.1.jar:C:\Users\grivera\.m2\repository\commons-collections\commons-collections\3.2.1\commons-collections-3.2.1.jar:C:\Users\grivera\.m2\repository\org\apache\commons\commons-lang3\3.1\commons-lang3-3.1.jar:C:\Users\grivera\.m2\repository\org\apache\httpcomponents\httpmime\4.3.1\httpmime-4.3.1.jar:C:\Users\grivera\.m2\repository\net\sourceforge\htmlunit\htmlunit-core-js\2.13\htmlunit-core-js-2.13.jar:C:\Users\grivera\.m2\repository\xerces\xercesImpl\2.11.0\xercesImpl-2.11.0.jar:C:\Users\grivera\.m2\repository\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar:C:\Users\grivera\.m2\repository\net\sourceforge\nekohtml\nekohtml\1.9.19\nekohtml-1.9.19.jar:C:\Users\grivera\.m2\repository\net\sourceforge\cssparser\cssparser\0.9.11\cssparser-0.9.11.jar:C:\Users\grivera\.m2\repository\org\w3c\css\sac\1.3\sac-1.3.jar:C:\Users\grivera\.m2\repository\commons-logging\commons-logging\1.1.3\commons-logging-1.1.3.jar:C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-websocket\8.1.12.v20130726\jetty-websocket-8.1.12.v20130726.jar:C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-util\8.1.12.v20130726\jetty-util-8.1.12.v20130726.jar:C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-io\8.1.12.v20130726\jetty-io-8.1.12.v20130726.jar:C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-http\8.1.12.v20130726\jetty-http-8.1.12.v20130726.jar:C:\Users\grivera\.m2\repository\org\apache\httpcomponents\httpclient\4.3.1\httpclient-4.3.1.jar:C:\Users\grivera\.m2\repository\org\apache\httpcomponents\httpcore\4.3\httpcore-4.3.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\2.39.0\selenium-firefox-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\commons-io\commons-io\2.2\commons-io-2.2.jar:C:\Users\grivera\.m2\repository\org\apache\commons\commons-exec\1.1\commons-exec-1.1.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\2.39.0\selenium-ie-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\net\java\dev\jna\jna\3.4.0\jna-3.4.0.jar:C:\Users\grivera\.m2\repository\net\java\dev\jna\platform\3.4.0\platform-3.4.0.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-iphone-driver\2.39.0\selenium-iphone-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\2.39.0\selenium-safari-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-support\2.39.0\selenium-support-2.39.0.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-api\2.39.0\selenium-api-2.39.0.jar:C:\Users\grivera\.m2\repository\org\webbitserver\webbit\0.4.14\webbit-0.4.14.jar:C:\Users\grivera\.m2\repository\io\netty\netty\3.5.2.Final\netty-3.5.2.Final.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-server\2.39.0\selenium-server-2.39.0.jar:C:\Users\grivera\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.48\bcprov-jdk15on-1.48.jar:C:\Users\grivera\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.48\bcpkix-jdk15on-1.48.jar:C:\Users\grivera\.m2\repository\mx4j\mx4j-tools\3.0.1\mx4j-tools-3.0.1.jar:C:\Users\grivera\.m2\repository\org\mortbay\jetty\servlet-api-2.5\6.1.9\servlet-api-2.5-6.1.9.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\jetty-repacked\7.6.1\jetty-repacked-7.6.1.jar:C:\Users\grivera\.m2\repository\net\jcip\jcip-annotations\1.0\jcip-annotations-1.0.jar:C:\Users\grivera\.m2\repository\org\yaml\snakeyaml\1.8\snakeyaml-1.8.jar:C:\Users\grivera\.m2\repository\commons-codec\commons-codec\1.8\commons-codec-1.8.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\2.39.0\selenium-chrome-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\2.39.0\selenium-remote-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\cglib\cglib-nodep\2.1_3\cglib-nodep-2.1_3.jar:C:\Users\grivera\.m2\repository\org\json\json\20080701\json-20080701.jar:C:\Users\grivera\.m2\repository\org\testng\testng\6.9.10\testng-6.9.10.jar:C:\Users\grivera\.m2\repository\com\beust\jcommander\1.48\jcommander-1.48.jar:C:\Users\grivera\.m2\repository\org\beanshell\bsh\2.0b4\bsh-2.0b4.jar:C:\Users\grivera\.m2\repository\com\google\guava\guava\18.0\guava-18.0.jar org.testng.remote.RemoteTestNG -serport 55201 -protocol json -d C:\Users\grivera\workspace\test\test-output C:\Users\grivera\AppData\Local\Temp\testng-eclipse--1951118472\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2017-04-04 19:54:25.247
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] BasicTest.java [in herokuapp [in src/test/java [in test]]]
+  package herokuapp
+  import java.util.Calendar
+  import java.text.SimpleDateFormat
+  import java.util.logging.Level
+  import java.util.logging.Logger
+  import org.openqa.selenium.NoSuchElementException
+  import org.openqa.selenium.TimeoutException
+  import org.openqa.selenium.WebDriver
+  import org.testng.Assert
+  import org.testng.annotations.AfterTest
+  import org.testng.annotations.BeforeTest
+  import org.testng.annotations.Test
+  import actions.Action
+  import util.HerokuappConstant
+  import config.Config
+  import page.AddDoctor
+  class BasicTest
+    WebDriver _driver
+    StringBuilder verificationErrors
+    HerokuappConstant _HerokuppConstant
+    Action action
+    Logger logger
+    AddDoctor _AddDoctor
+    String DATE_FORMAT_NOW
+    String DOCTOR_NAME
+    String DOCTOR_LASTNAME
+    String DOCTOR_TELEPHONE
+    String DOCTOR_ID_TYPE
+    String DOCTOR_ID
+    String PATIENT_NAME
+    String PATIENT_LASTNAME
+    String PATIENT_TELEPHONE
+    String PATIENT_ID_TYPE
+    String PATIENT_ID
+    String CITA_PATIENT
+    String CITA_DOCTOR
+    String CITA_DATE
+    String CITA_OBSERVA
+    int OPCIONADDOCTOR
+    int OPCIONADDPATIENT
+    int OPCIONADDCITA
+    WebDriver getDriver()
+    void setUp()
+    void tearDown()
+    void closeWebDriver()
+    void testaddDoctor()
+
+!ENTRY org.testng.eclipse 1 0 2017-04-04 19:54:25.535
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\eclipse\plugins\org.testng.eclipse_6.11.0.201703011520\lib\testng-remote.jar C:\Users\grivera\workspace\test\target\test-classes C:\Users\grivera\workspace\test\target\classes C:\Users\grivera\.m2\repository\junit\junit\4.12\junit-4.12.jar C:\Users\grivera\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-java\2.39.0\selenium-java-2.39.0.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-android-driver\2.39.0\selenium-android-driver-2.39.0.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-htmlunit-driver\2.39.0\selenium-htmlunit-driver-2.39.0.jar C:\Users\grivera\.m2\repository\net\sourceforge\htmlunit\htmlunit\2.13\htmlunit-2.13.jar C:\Users\grivera\.m2\repository\xalan\xalan\2.7.1\xalan-2.7.1.jar C:\Users\grivera\.m2\repository\xalan\serializer\2.7.1\serializer-2.7.1.jar C:\Users\grivera\.m2\repository\commons-collections\commons-collections\3.2.1\commons-collections-3.2.1.jar C:\Users\grivera\.m2\repository\org\apache\commons\commons-lang3\3.1\commons-lang3-3.1.jar C:\Users\grivera\.m2\repository\org\apache\httpcomponents\httpmime\4.3.1\httpmime-4.3.1.jar C:\Users\grivera\.m2\repository\net\sourceforge\htmlunit\htmlunit-core-js\2.13\htmlunit-core-js-2.13.jar C:\Users\grivera\.m2\repository\xerces\xercesImpl\2.11.0\xercesImpl-2.11.0.jar C:\Users\grivera\.m2\repository\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar C:\Users\grivera\.m2\repository\net\sourceforge\nekohtml\nekohtml\1.9.19\nekohtml-1.9.19.jar C:\Users\grivera\.m2\repository\net\sourceforge\cssparser\cssparser\0.9.11\cssparser-0.9.11.jar C:\Users\grivera\.m2\repository\org\w3c\css\sac\1.3\sac-1.3.jar C:\Users\grivera\.m2\repository\commons-logging\commons-logging\1.1.3\commons-logging-1.1.3.jar C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-websocket\8.1.12.v20130726\jetty-websocket-8.1.12.v20130726.jar C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-util\8.1.12.v20130726\jetty-util-8.1.12.v20130726.jar C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-io\8.1.12.v20130726\jetty-io-8.1.12.v20130726.jar C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-http\8.1.12.v20130726\jetty-http-8.1.12.v20130726.jar C:\Users\grivera\.m2\repository\org\apache\httpcomponents\httpclient\4.3.1\httpclient-4.3.1.jar C:\Users\grivera\.m2\repository\org\apache\httpcomponents\httpcore\4.3\httpcore-4.3.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\2.39.0\selenium-firefox-driver-2.39.0.jar C:\Users\grivera\.m2\repository\commons-io\commons-io\2.2\commons-io-2.2.jar C:\Users\grivera\.m2\repository\org\apache\commons\commons-exec\1.1\commons-exec-1.1.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\2.39.0\selenium-ie-driver-2.39.0.jar C:\Users\grivera\.m2\repository\net\java\dev\jna\jna\3.4.0\jna-3.4.0.jar C:\Users\grivera\.m2\repository\net\java\dev\jna\platform\3.4.0\platform-3.4.0.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-iphone-driver\2.39.0\selenium-iphone-driver-2.39.0.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\2.39.0\selenium-safari-driver-2.39.0.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-support\2.39.0\selenium-support-2.39.0.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-api\2.39.0\selenium-api-2.39.0.jar C:\Users\grivera\.m2\repository\org\webbitserver\webbit\0.4.14\webbit-0.4.14.jar C:\Users\grivera\.m2\repository\io\netty\netty\3.5.2.Final\netty-3.5.2.Final.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-server\2.39.0\selenium-server-2.39.0.jar C:\Users\grivera\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.48\bcprov-jdk15on-1.48.jar C:\Users\grivera\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.48\bcpkix-jdk15on-1.48.jar C:\Users\grivera\.m2\repository\mx4j\mx4j-tools\3.0.1\mx4j-tools-3.0.1.jar C:\Users\grivera\.m2\repository\org\mortbay\jetty\servlet-api-2.5\6.1.9\servlet-api-2.5-6.1.9.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\jetty-repacked\7.6.1\jetty-repacked-7.6.1.jar C:\Users\grivera\.m2\repository\net\jcip\jcip-annotations\1.0\jcip-annotations-1.0.jar C:\Users\grivera\.m2\repository\org\yaml\snakeyaml\1.8\snakeyaml-1.8.jar C:\Users\grivera\.m2\repository\commons-codec\commons-codec\1.8\commons-codec-1.8.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\2.39.0\selenium-chrome-driver-2.39.0.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\2.39.0\selenium-remote-driver-2.39.0.jar C:\Users\grivera\.m2\repository\cglib\cglib-nodep\2.1_3\cglib-nodep-2.1_3.jar C:\Users\grivera\.m2\repository\org\json\json\20080701\json-20080701.jar C:\Users\grivera\.m2\repository\org\testng\testng\6.9.10\testng-6.9.10.jar C:\Users\grivera\.m2\repository\com\beust\jcommander\1.48\jcommander-1.48.jar C:\Users\grivera\.m2\repository\org\beanshell\bsh\2.0b4\bsh-2.0b4.jar C:\Users\grivera\.m2\repository\com\google\guava\guava\18.0\guava-18.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 55591 -protocol json -d C:\Users\grivera\workspace\test\test-output C:\Users\grivera\AppData\Local\Temp\testng-eclipse-1251554919\testng-customsuite.xml
+java -ea -classpath C:\eclipse\plugins\org.testng.eclipse_6.11.0.201703011520\lib\testng-remote.jar:C:\Users\grivera\workspace\test\target\test-classes:C:\Users\grivera\workspace\test\target\classes:C:\Users\grivera\.m2\repository\junit\junit\4.12\junit-4.12.jar:C:\Users\grivera\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-java\2.39.0\selenium-java-2.39.0.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-android-driver\2.39.0\selenium-android-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-htmlunit-driver\2.39.0\selenium-htmlunit-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\net\sourceforge\htmlunit\htmlunit\2.13\htmlunit-2.13.jar:C:\Users\grivera\.m2\repository\xalan\xalan\2.7.1\xalan-2.7.1.jar:C:\Users\grivera\.m2\repository\xalan\serializer\2.7.1\serializer-2.7.1.jar:C:\Users\grivera\.m2\repository\commons-collections\commons-collections\3.2.1\commons-collections-3.2.1.jar:C:\Users\grivera\.m2\repository\org\apache\commons\commons-lang3\3.1\commons-lang3-3.1.jar:C:\Users\grivera\.m2\repository\org\apache\httpcomponents\httpmime\4.3.1\httpmime-4.3.1.jar:C:\Users\grivera\.m2\repository\net\sourceforge\htmlunit\htmlunit-core-js\2.13\htmlunit-core-js-2.13.jar:C:\Users\grivera\.m2\repository\xerces\xercesImpl\2.11.0\xercesImpl-2.11.0.jar:C:\Users\grivera\.m2\repository\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar:C:\Users\grivera\.m2\repository\net\sourceforge\nekohtml\nekohtml\1.9.19\nekohtml-1.9.19.jar:C:\Users\grivera\.m2\repository\net\sourceforge\cssparser\cssparser\0.9.11\cssparser-0.9.11.jar:C:\Users\grivera\.m2\repository\org\w3c\css\sac\1.3\sac-1.3.jar:C:\Users\grivera\.m2\repository\commons-logging\commons-logging\1.1.3\commons-logging-1.1.3.jar:C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-websocket\8.1.12.v20130726\jetty-websocket-8.1.12.v20130726.jar:C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-util\8.1.12.v20130726\jetty-util-8.1.12.v20130726.jar:C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-io\8.1.12.v20130726\jetty-io-8.1.12.v20130726.jar:C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-http\8.1.12.v20130726\jetty-http-8.1.12.v20130726.jar:C:\Users\grivera\.m2\repository\org\apache\httpcomponents\httpclient\4.3.1\httpclient-4.3.1.jar:C:\Users\grivera\.m2\repository\org\apache\httpcomponents\httpcore\4.3\httpcore-4.3.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\2.39.0\selenium-firefox-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\commons-io\commons-io\2.2\commons-io-2.2.jar:C:\Users\grivera\.m2\repository\org\apache\commons\commons-exec\1.1\commons-exec-1.1.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\2.39.0\selenium-ie-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\net\java\dev\jna\jna\3.4.0\jna-3.4.0.jar:C:\Users\grivera\.m2\repository\net\java\dev\jna\platform\3.4.0\platform-3.4.0.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-iphone-driver\2.39.0\selenium-iphone-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\2.39.0\selenium-safari-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-support\2.39.0\selenium-support-2.39.0.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-api\2.39.0\selenium-api-2.39.0.jar:C:\Users\grivera\.m2\repository\org\webbitserver\webbit\0.4.14\webbit-0.4.14.jar:C:\Users\grivera\.m2\repository\io\netty\netty\3.5.2.Final\netty-3.5.2.Final.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-server\2.39.0\selenium-server-2.39.0.jar:C:\Users\grivera\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.48\bcprov-jdk15on-1.48.jar:C:\Users\grivera\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.48\bcpkix-jdk15on-1.48.jar:C:\Users\grivera\.m2\repository\mx4j\mx4j-tools\3.0.1\mx4j-tools-3.0.1.jar:C:\Users\grivera\.m2\repository\org\mortbay\jetty\servlet-api-2.5\6.1.9\servlet-api-2.5-6.1.9.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\jetty-repacked\7.6.1\jetty-repacked-7.6.1.jar:C:\Users\grivera\.m2\repository\net\jcip\jcip-annotations\1.0\jcip-annotations-1.0.jar:C:\Users\grivera\.m2\repository\org\yaml\snakeyaml\1.8\snakeyaml-1.8.jar:C:\Users\grivera\.m2\repository\commons-codec\commons-codec\1.8\commons-codec-1.8.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\2.39.0\selenium-chrome-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\2.39.0\selenium-remote-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\cglib\cglib-nodep\2.1_3\cglib-nodep-2.1_3.jar:C:\Users\grivera\.m2\repository\org\json\json\20080701\json-20080701.jar:C:\Users\grivera\.m2\repository\org\testng\testng\6.9.10\testng-6.9.10.jar:C:\Users\grivera\.m2\repository\com\beust\jcommander\1.48\jcommander-1.48.jar:C:\Users\grivera\.m2\repository\org\beanshell\bsh\2.0b4\bsh-2.0b4.jar:C:\Users\grivera\.m2\repository\com\google\guava\guava\18.0\guava-18.0.jar org.testng.remote.RemoteTestNG -serport 55591 -protocol json -d C:\Users\grivera\workspace\test\test-output C:\Users\grivera\AppData\Local\Temp\testng-eclipse-1251554919\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2017-04-04 19:56:23.822
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\eclipse\plugins\org.testng.eclipse_6.11.0.201703011520\lib\testng-remote.jar C:\Users\grivera\workspace\test\target\test-classes C:\Users\grivera\workspace\test\target\classes C:\Users\grivera\.m2\repository\junit\junit\4.12\junit-4.12.jar C:\Users\grivera\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-java\2.39.0\selenium-java-2.39.0.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-android-driver\2.39.0\selenium-android-driver-2.39.0.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-htmlunit-driver\2.39.0\selenium-htmlunit-driver-2.39.0.jar C:\Users\grivera\.m2\repository\net\sourceforge\htmlunit\htmlunit\2.13\htmlunit-2.13.jar C:\Users\grivera\.m2\repository\xalan\xalan\2.7.1\xalan-2.7.1.jar C:\Users\grivera\.m2\repository\xalan\serializer\2.7.1\serializer-2.7.1.jar C:\Users\grivera\.m2\repository\commons-collections\commons-collections\3.2.1\commons-collections-3.2.1.jar C:\Users\grivera\.m2\repository\org\apache\commons\commons-lang3\3.1\commons-lang3-3.1.jar C:\Users\grivera\.m2\repository\org\apache\httpcomponents\httpmime\4.3.1\httpmime-4.3.1.jar C:\Users\grivera\.m2\repository\net\sourceforge\htmlunit\htmlunit-core-js\2.13\htmlunit-core-js-2.13.jar C:\Users\grivera\.m2\repository\xerces\xercesImpl\2.11.0\xercesImpl-2.11.0.jar C:\Users\grivera\.m2\repository\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar C:\Users\grivera\.m2\repository\net\sourceforge\nekohtml\nekohtml\1.9.19\nekohtml-1.9.19.jar C:\Users\grivera\.m2\repository\net\sourceforge\cssparser\cssparser\0.9.11\cssparser-0.9.11.jar C:\Users\grivera\.m2\repository\org\w3c\css\sac\1.3\sac-1.3.jar C:\Users\grivera\.m2\repository\commons-logging\commons-logging\1.1.3\commons-logging-1.1.3.jar C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-websocket\8.1.12.v20130726\jetty-websocket-8.1.12.v20130726.jar C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-util\8.1.12.v20130726\jetty-util-8.1.12.v20130726.jar C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-io\8.1.12.v20130726\jetty-io-8.1.12.v20130726.jar C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-http\8.1.12.v20130726\jetty-http-8.1.12.v20130726.jar C:\Users\grivera\.m2\repository\org\apache\httpcomponents\httpclient\4.3.1\httpclient-4.3.1.jar C:\Users\grivera\.m2\repository\org\apache\httpcomponents\httpcore\4.3\httpcore-4.3.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\2.39.0\selenium-firefox-driver-2.39.0.jar C:\Users\grivera\.m2\repository\commons-io\commons-io\2.2\commons-io-2.2.jar C:\Users\grivera\.m2\repository\org\apache\commons\commons-exec\1.1\commons-exec-1.1.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\2.39.0\selenium-ie-driver-2.39.0.jar C:\Users\grivera\.m2\repository\net\java\dev\jna\jna\3.4.0\jna-3.4.0.jar C:\Users\grivera\.m2\repository\net\java\dev\jna\platform\3.4.0\platform-3.4.0.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-iphone-driver\2.39.0\selenium-iphone-driver-2.39.0.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\2.39.0\selenium-safari-driver-2.39.0.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-support\2.39.0\selenium-support-2.39.0.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-api\2.39.0\selenium-api-2.39.0.jar C:\Users\grivera\.m2\repository\org\webbitserver\webbit\0.4.14\webbit-0.4.14.jar C:\Users\grivera\.m2\repository\io\netty\netty\3.5.2.Final\netty-3.5.2.Final.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-server\2.39.0\selenium-server-2.39.0.jar C:\Users\grivera\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.48\bcprov-jdk15on-1.48.jar C:\Users\grivera\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.48\bcpkix-jdk15on-1.48.jar C:\Users\grivera\.m2\repository\mx4j\mx4j-tools\3.0.1\mx4j-tools-3.0.1.jar C:\Users\grivera\.m2\repository\org\mortbay\jetty\servlet-api-2.5\6.1.9\servlet-api-2.5-6.1.9.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\jetty-repacked\7.6.1\jetty-repacked-7.6.1.jar C:\Users\grivera\.m2\repository\net\jcip\jcip-annotations\1.0\jcip-annotations-1.0.jar C:\Users\grivera\.m2\repository\org\yaml\snakeyaml\1.8\snakeyaml-1.8.jar C:\Users\grivera\.m2\repository\commons-codec\commons-codec\1.8\commons-codec-1.8.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\2.39.0\selenium-chrome-driver-2.39.0.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\2.39.0\selenium-remote-driver-2.39.0.jar C:\Users\grivera\.m2\repository\cglib\cglib-nodep\2.1_3\cglib-nodep-2.1_3.jar C:\Users\grivera\.m2\repository\org\json\json\20080701\json-20080701.jar C:\Users\grivera\.m2\repository\org\testng\testng\6.9.10\testng-6.9.10.jar C:\Users\grivera\.m2\repository\com\beust\jcommander\1.48\jcommander-1.48.jar C:\Users\grivera\.m2\repository\org\beanshell\bsh\2.0b4\bsh-2.0b4.jar C:\Users\grivera\.m2\repository\com\google\guava\guava\18.0\guava-18.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 55651 -protocol json -d C:\Users\grivera\workspace\test\test-output C:\Users\grivera\AppData\Local\Temp\testng-eclipse-1747263100\testng-customsuite.xml
+java -ea -classpath C:\eclipse\plugins\org.testng.eclipse_6.11.0.201703011520\lib\testng-remote.jar:C:\Users\grivera\workspace\test\target\test-classes:C:\Users\grivera\workspace\test\target\classes:C:\Users\grivera\.m2\repository\junit\junit\4.12\junit-4.12.jar:C:\Users\grivera\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-java\2.39.0\selenium-java-2.39.0.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-android-driver\2.39.0\selenium-android-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-htmlunit-driver\2.39.0\selenium-htmlunit-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\net\sourceforge\htmlunit\htmlunit\2.13\htmlunit-2.13.jar:C:\Users\grivera\.m2\repository\xalan\xalan\2.7.1\xalan-2.7.1.jar:C:\Users\grivera\.m2\repository\xalan\serializer\2.7.1\serializer-2.7.1.jar:C:\Users\grivera\.m2\repository\commons-collections\commons-collections\3.2.1\commons-collections-3.2.1.jar:C:\Users\grivera\.m2\repository\org\apache\commons\commons-lang3\3.1\commons-lang3-3.1.jar:C:\Users\grivera\.m2\repository\org\apache\httpcomponents\httpmime\4.3.1\httpmime-4.3.1.jar:C:\Users\grivera\.m2\repository\net\sourceforge\htmlunit\htmlunit-core-js\2.13\htmlunit-core-js-2.13.jar:C:\Users\grivera\.m2\repository\xerces\xercesImpl\2.11.0\xercesImpl-2.11.0.jar:C:\Users\grivera\.m2\repository\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar:C:\Users\grivera\.m2\repository\net\sourceforge\nekohtml\nekohtml\1.9.19\nekohtml-1.9.19.jar:C:\Users\grivera\.m2\repository\net\sourceforge\cssparser\cssparser\0.9.11\cssparser-0.9.11.jar:C:\Users\grivera\.m2\repository\org\w3c\css\sac\1.3\sac-1.3.jar:C:\Users\grivera\.m2\repository\commons-logging\commons-logging\1.1.3\commons-logging-1.1.3.jar:C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-websocket\8.1.12.v20130726\jetty-websocket-8.1.12.v20130726.jar:C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-util\8.1.12.v20130726\jetty-util-8.1.12.v20130726.jar:C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-io\8.1.12.v20130726\jetty-io-8.1.12.v20130726.jar:C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-http\8.1.12.v20130726\jetty-http-8.1.12.v20130726.jar:C:\Users\grivera\.m2\repository\org\apache\httpcomponents\httpclient\4.3.1\httpclient-4.3.1.jar:C:\Users\grivera\.m2\repository\org\apache\httpcomponents\httpcore\4.3\httpcore-4.3.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\2.39.0\selenium-firefox-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\commons-io\commons-io\2.2\commons-io-2.2.jar:C:\Users\grivera\.m2\repository\org\apache\commons\commons-exec\1.1\commons-exec-1.1.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\2.39.0\selenium-ie-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\net\java\dev\jna\jna\3.4.0\jna-3.4.0.jar:C:\Users\grivera\.m2\repository\net\java\dev\jna\platform\3.4.0\platform-3.4.0.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-iphone-driver\2.39.0\selenium-iphone-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\2.39.0\selenium-safari-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-support\2.39.0\selenium-support-2.39.0.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-api\2.39.0\selenium-api-2.39.0.jar:C:\Users\grivera\.m2\repository\org\webbitserver\webbit\0.4.14\webbit-0.4.14.jar:C:\Users\grivera\.m2\repository\io\netty\netty\3.5.2.Final\netty-3.5.2.Final.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-server\2.39.0\selenium-server-2.39.0.jar:C:\Users\grivera\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.48\bcprov-jdk15on-1.48.jar:C:\Users\grivera\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.48\bcpkix-jdk15on-1.48.jar:C:\Users\grivera\.m2\repository\mx4j\mx4j-tools\3.0.1\mx4j-tools-3.0.1.jar:C:\Users\grivera\.m2\repository\org\mortbay\jetty\servlet-api-2.5\6.1.9\servlet-api-2.5-6.1.9.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\jetty-repacked\7.6.1\jetty-repacked-7.6.1.jar:C:\Users\grivera\.m2\repository\net\jcip\jcip-annotations\1.0\jcip-annotations-1.0.jar:C:\Users\grivera\.m2\repository\org\yaml\snakeyaml\1.8\snakeyaml-1.8.jar:C:\Users\grivera\.m2\repository\commons-codec\commons-codec\1.8\commons-codec-1.8.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\2.39.0\selenium-chrome-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\2.39.0\selenium-remote-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\cglib\cglib-nodep\2.1_3\cglib-nodep-2.1_3.jar:C:\Users\grivera\.m2\repository\org\json\json\20080701\json-20080701.jar:C:\Users\grivera\.m2\repository\org\testng\testng\6.9.10\testng-6.9.10.jar:C:\Users\grivera\.m2\repository\com\beust\jcommander\1.48\jcommander-1.48.jar:C:\Users\grivera\.m2\repository\org\beanshell\bsh\2.0b4\bsh-2.0b4.jar:C:\Users\grivera\.m2\repository\com\google\guava\guava\18.0\guava-18.0.jar org.testng.remote.RemoteTestNG -serport 55651 -protocol json -d C:\Users\grivera\workspace\test\test-output C:\Users\grivera\AppData\Local\Temp\testng-eclipse-1747263100\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2017-04-04 20:00:39.179
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\eclipse\plugins\org.testng.eclipse_6.11.0.201703011520\lib\testng-remote.jar C:\Users\grivera\workspace\test\target\test-classes C:\Users\grivera\workspace\test\target\classes C:\Users\grivera\.m2\repository\junit\junit\4.12\junit-4.12.jar C:\Users\grivera\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-java\2.39.0\selenium-java-2.39.0.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-android-driver\2.39.0\selenium-android-driver-2.39.0.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-htmlunit-driver\2.39.0\selenium-htmlunit-driver-2.39.0.jar C:\Users\grivera\.m2\repository\net\sourceforge\htmlunit\htmlunit\2.13\htmlunit-2.13.jar C:\Users\grivera\.m2\repository\xalan\xalan\2.7.1\xalan-2.7.1.jar C:\Users\grivera\.m2\repository\xalan\serializer\2.7.1\serializer-2.7.1.jar C:\Users\grivera\.m2\repository\commons-collections\commons-collections\3.2.1\commons-collections-3.2.1.jar C:\Users\grivera\.m2\repository\org\apache\commons\commons-lang3\3.1\commons-lang3-3.1.jar C:\Users\grivera\.m2\repository\org\apache\httpcomponents\httpmime\4.3.1\httpmime-4.3.1.jar C:\Users\grivera\.m2\repository\net\sourceforge\htmlunit\htmlunit-core-js\2.13\htmlunit-core-js-2.13.jar C:\Users\grivera\.m2\repository\xerces\xercesImpl\2.11.0\xercesImpl-2.11.0.jar C:\Users\grivera\.m2\repository\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar C:\Users\grivera\.m2\repository\net\sourceforge\nekohtml\nekohtml\1.9.19\nekohtml-1.9.19.jar C:\Users\grivera\.m2\repository\net\sourceforge\cssparser\cssparser\0.9.11\cssparser-0.9.11.jar C:\Users\grivera\.m2\repository\org\w3c\css\sac\1.3\sac-1.3.jar C:\Users\grivera\.m2\repository\commons-logging\commons-logging\1.1.3\commons-logging-1.1.3.jar C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-websocket\8.1.12.v20130726\jetty-websocket-8.1.12.v20130726.jar C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-util\8.1.12.v20130726\jetty-util-8.1.12.v20130726.jar C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-io\8.1.12.v20130726\jetty-io-8.1.12.v20130726.jar C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-http\8.1.12.v20130726\jetty-http-8.1.12.v20130726.jar C:\Users\grivera\.m2\repository\org\apache\httpcomponents\httpclient\4.3.1\httpclient-4.3.1.jar C:\Users\grivera\.m2\repository\org\apache\httpcomponents\httpcore\4.3\httpcore-4.3.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\2.39.0\selenium-firefox-driver-2.39.0.jar C:\Users\grivera\.m2\repository\commons-io\commons-io\2.2\commons-io-2.2.jar C:\Users\grivera\.m2\repository\org\apache\commons\commons-exec\1.1\commons-exec-1.1.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\2.39.0\selenium-ie-driver-2.39.0.jar C:\Users\grivera\.m2\repository\net\java\dev\jna\jna\3.4.0\jna-3.4.0.jar C:\Users\grivera\.m2\repository\net\java\dev\jna\platform\3.4.0\platform-3.4.0.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-iphone-driver\2.39.0\selenium-iphone-driver-2.39.0.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\2.39.0\selenium-safari-driver-2.39.0.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-support\2.39.0\selenium-support-2.39.0.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-api\2.39.0\selenium-api-2.39.0.jar C:\Users\grivera\.m2\repository\org\webbitserver\webbit\0.4.14\webbit-0.4.14.jar C:\Users\grivera\.m2\repository\io\netty\netty\3.5.2.Final\netty-3.5.2.Final.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-server\2.39.0\selenium-server-2.39.0.jar C:\Users\grivera\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.48\bcprov-jdk15on-1.48.jar C:\Users\grivera\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.48\bcpkix-jdk15on-1.48.jar C:\Users\grivera\.m2\repository\mx4j\mx4j-tools\3.0.1\mx4j-tools-3.0.1.jar C:\Users\grivera\.m2\repository\org\mortbay\jetty\servlet-api-2.5\6.1.9\servlet-api-2.5-6.1.9.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\jetty-repacked\7.6.1\jetty-repacked-7.6.1.jar C:\Users\grivera\.m2\repository\net\jcip\jcip-annotations\1.0\jcip-annotations-1.0.jar C:\Users\grivera\.m2\repository\org\yaml\snakeyaml\1.8\snakeyaml-1.8.jar C:\Users\grivera\.m2\repository\commons-codec\commons-codec\1.8\commons-codec-1.8.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\2.39.0\selenium-chrome-driver-2.39.0.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\2.39.0\selenium-remote-driver-2.39.0.jar C:\Users\grivera\.m2\repository\cglib\cglib-nodep\2.1_3\cglib-nodep-2.1_3.jar C:\Users\grivera\.m2\repository\org\json\json\20080701\json-20080701.jar C:\Users\grivera\.m2\repository\org\testng\testng\6.9.10\testng-6.9.10.jar C:\Users\grivera\.m2\repository\com\beust\jcommander\1.48\jcommander-1.48.jar C:\Users\grivera\.m2\repository\org\beanshell\bsh\2.0b4\bsh-2.0b4.jar C:\Users\grivera\.m2\repository\com\google\guava\guava\18.0\guava-18.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 55793 -protocol json -d C:\Users\grivera\workspace\test\test-output C:\Users\grivera\AppData\Local\Temp\testng-eclipse-435409436\testng-customsuite.xml
+java -ea -classpath C:\eclipse\plugins\org.testng.eclipse_6.11.0.201703011520\lib\testng-remote.jar:C:\Users\grivera\workspace\test\target\test-classes:C:\Users\grivera\workspace\test\target\classes:C:\Users\grivera\.m2\repository\junit\junit\4.12\junit-4.12.jar:C:\Users\grivera\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-java\2.39.0\selenium-java-2.39.0.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-android-driver\2.39.0\selenium-android-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-htmlunit-driver\2.39.0\selenium-htmlunit-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\net\sourceforge\htmlunit\htmlunit\2.13\htmlunit-2.13.jar:C:\Users\grivera\.m2\repository\xalan\xalan\2.7.1\xalan-2.7.1.jar:C:\Users\grivera\.m2\repository\xalan\serializer\2.7.1\serializer-2.7.1.jar:C:\Users\grivera\.m2\repository\commons-collections\commons-collections\3.2.1\commons-collections-3.2.1.jar:C:\Users\grivera\.m2\repository\org\apache\commons\commons-lang3\3.1\commons-lang3-3.1.jar:C:\Users\grivera\.m2\repository\org\apache\httpcomponents\httpmime\4.3.1\httpmime-4.3.1.jar:C:\Users\grivera\.m2\repository\net\sourceforge\htmlunit\htmlunit-core-js\2.13\htmlunit-core-js-2.13.jar:C:\Users\grivera\.m2\repository\xerces\xercesImpl\2.11.0\xercesImpl-2.11.0.jar:C:\Users\grivera\.m2\repository\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar:C:\Users\grivera\.m2\repository\net\sourceforge\nekohtml\nekohtml\1.9.19\nekohtml-1.9.19.jar:C:\Users\grivera\.m2\repository\net\sourceforge\cssparser\cssparser\0.9.11\cssparser-0.9.11.jar:C:\Users\grivera\.m2\repository\org\w3c\css\sac\1.3\sac-1.3.jar:C:\Users\grivera\.m2\repository\commons-logging\commons-logging\1.1.3\commons-logging-1.1.3.jar:C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-websocket\8.1.12.v20130726\jetty-websocket-8.1.12.v20130726.jar:C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-util\8.1.12.v20130726\jetty-util-8.1.12.v20130726.jar:C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-io\8.1.12.v20130726\jetty-io-8.1.12.v20130726.jar:C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-http\8.1.12.v20130726\jetty-http-8.1.12.v20130726.jar:C:\Users\grivera\.m2\repository\org\apache\httpcomponents\httpclient\4.3.1\httpclient-4.3.1.jar:C:\Users\grivera\.m2\repository\org\apache\httpcomponents\httpcore\4.3\httpcore-4.3.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\2.39.0\selenium-firefox-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\commons-io\commons-io\2.2\commons-io-2.2.jar:C:\Users\grivera\.m2\repository\org\apache\commons\commons-exec\1.1\commons-exec-1.1.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\2.39.0\selenium-ie-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\net\java\dev\jna\jna\3.4.0\jna-3.4.0.jar:C:\Users\grivera\.m2\repository\net\java\dev\jna\platform\3.4.0\platform-3.4.0.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-iphone-driver\2.39.0\selenium-iphone-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\2.39.0\selenium-safari-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-support\2.39.0\selenium-support-2.39.0.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-api\2.39.0\selenium-api-2.39.0.jar:C:\Users\grivera\.m2\repository\org\webbitserver\webbit\0.4.14\webbit-0.4.14.jar:C:\Users\grivera\.m2\repository\io\netty\netty\3.5.2.Final\netty-3.5.2.Final.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-server\2.39.0\selenium-server-2.39.0.jar:C:\Users\grivera\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.48\bcprov-jdk15on-1.48.jar:C:\Users\grivera\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.48\bcpkix-jdk15on-1.48.jar:C:\Users\grivera\.m2\repository\mx4j\mx4j-tools\3.0.1\mx4j-tools-3.0.1.jar:C:\Users\grivera\.m2\repository\org\mortbay\jetty\servlet-api-2.5\6.1.9\servlet-api-2.5-6.1.9.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\jetty-repacked\7.6.1\jetty-repacked-7.6.1.jar:C:\Users\grivera\.m2\repository\net\jcip\jcip-annotations\1.0\jcip-annotations-1.0.jar:C:\Users\grivera\.m2\repository\org\yaml\snakeyaml\1.8\snakeyaml-1.8.jar:C:\Users\grivera\.m2\repository\commons-codec\commons-codec\1.8\commons-codec-1.8.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\2.39.0\selenium-chrome-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\2.39.0\selenium-remote-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\cglib\cglib-nodep\2.1_3\cglib-nodep-2.1_3.jar:C:\Users\grivera\.m2\repository\org\json\json\20080701\json-20080701.jar:C:\Users\grivera\.m2\repository\org\testng\testng\6.9.10\testng-6.9.10.jar:C:\Users\grivera\.m2\repository\com\beust\jcommander\1.48\jcommander-1.48.jar:C:\Users\grivera\.m2\repository\org\beanshell\bsh\2.0b4\bsh-2.0b4.jar:C:\Users\grivera\.m2\repository\com\google\guava\guava\18.0\guava-18.0.jar org.testng.remote.RemoteTestNG -serport 55793 -protocol json -d C:\Users\grivera\workspace\test\test-output C:\Users\grivera\AppData\Local\Temp\testng-eclipse-435409436\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2017-04-04 20:02:33.283
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] BasicTest.java [in herokuapp [in src/test/java [in test]]]
+  package herokuapp
+  import java.util.Calendar
+  import java.text.SimpleDateFormat
+  import java.util.logging.Level
+  import java.util.logging.Logger
+  import org.openqa.selenium.NoSuchElementException
+  import org.openqa.selenium.TimeoutException
+  import org.openqa.selenium.WebDriver
+  import org.testng.Assert
+  import org.testng.annotations.AfterTest
+  import org.testng.annotations.BeforeTest
+  import org.testng.annotations.Test
+  import actions.Action
+  import util.HerokuappConstant
+  import config.Config
+  import page.AddDoctor
+  class BasicTest
+    WebDriver _driver
+    StringBuilder verificationErrors
+    HerokuappConstant _HerokuppConstant
+    Action action
+    Logger logger
+    AddDoctor _AddDoctor
+    String DATE_FORMAT_NOW
+    String DOCTOR_NAME
+    String DOCTOR_LASTNAME
+    String DOCTOR_TELEPHONE
+    String DOCTOR_ID_TYPE
+    String DOCTOR_ID
+    String PATIENT_NAME
+    String PATIENT_LASTNAME
+    String PATIENT_TELEPHONE
+    String PATIENT_ID_TYPE
+    String PATIENT_ID
+    String CITA_PATIENT
+    String CITA_DOCTOR
+    String CITA_DATE
+    String CITA_OBSERVA
+    int OPCIONADDOCTOR
+    int OPCIONADDPATIENT
+    int OPCIONADDCITA
+    WebDriver getDriver()
+    void setUp()
+    void tearDown()
+    void closeWebDriver()
+    void testaddDoctor()
+
+!ENTRY org.testng.eclipse 1 0 2017-04-04 20:02:33.490
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\eclipse\plugins\org.testng.eclipse_6.11.0.201703011520\lib\testng-remote.jar C:\Users\grivera\workspace\test\target\test-classes C:\Users\grivera\workspace\test\target\classes C:\Users\grivera\.m2\repository\junit\junit\4.12\junit-4.12.jar C:\Users\grivera\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-java\2.39.0\selenium-java-2.39.0.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-android-driver\2.39.0\selenium-android-driver-2.39.0.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-htmlunit-driver\2.39.0\selenium-htmlunit-driver-2.39.0.jar C:\Users\grivera\.m2\repository\net\sourceforge\htmlunit\htmlunit\2.13\htmlunit-2.13.jar C:\Users\grivera\.m2\repository\xalan\xalan\2.7.1\xalan-2.7.1.jar C:\Users\grivera\.m2\repository\xalan\serializer\2.7.1\serializer-2.7.1.jar C:\Users\grivera\.m2\repository\commons-collections\commons-collections\3.2.1\commons-collections-3.2.1.jar C:\Users\grivera\.m2\repository\org\apache\commons\commons-lang3\3.1\commons-lang3-3.1.jar C:\Users\grivera\.m2\repository\org\apache\httpcomponents\httpmime\4.3.1\httpmime-4.3.1.jar C:\Users\grivera\.m2\repository\net\sourceforge\htmlunit\htmlunit-core-js\2.13\htmlunit-core-js-2.13.jar C:\Users\grivera\.m2\repository\xerces\xercesImpl\2.11.0\xercesImpl-2.11.0.jar C:\Users\grivera\.m2\repository\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar C:\Users\grivera\.m2\repository\net\sourceforge\nekohtml\nekohtml\1.9.19\nekohtml-1.9.19.jar C:\Users\grivera\.m2\repository\net\sourceforge\cssparser\cssparser\0.9.11\cssparser-0.9.11.jar C:\Users\grivera\.m2\repository\org\w3c\css\sac\1.3\sac-1.3.jar C:\Users\grivera\.m2\repository\commons-logging\commons-logging\1.1.3\commons-logging-1.1.3.jar C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-websocket\8.1.12.v20130726\jetty-websocket-8.1.12.v20130726.jar C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-util\8.1.12.v20130726\jetty-util-8.1.12.v20130726.jar C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-io\8.1.12.v20130726\jetty-io-8.1.12.v20130726.jar C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-http\8.1.12.v20130726\jetty-http-8.1.12.v20130726.jar C:\Users\grivera\.m2\repository\org\apache\httpcomponents\httpclient\4.3.1\httpclient-4.3.1.jar C:\Users\grivera\.m2\repository\org\apache\httpcomponents\httpcore\4.3\httpcore-4.3.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\2.39.0\selenium-firefox-driver-2.39.0.jar C:\Users\grivera\.m2\repository\commons-io\commons-io\2.2\commons-io-2.2.jar C:\Users\grivera\.m2\repository\org\apache\commons\commons-exec\1.1\commons-exec-1.1.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\2.39.0\selenium-ie-driver-2.39.0.jar C:\Users\grivera\.m2\repository\net\java\dev\jna\jna\3.4.0\jna-3.4.0.jar C:\Users\grivera\.m2\repository\net\java\dev\jna\platform\3.4.0\platform-3.4.0.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-iphone-driver\2.39.0\selenium-iphone-driver-2.39.0.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\2.39.0\selenium-safari-driver-2.39.0.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-support\2.39.0\selenium-support-2.39.0.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-api\2.39.0\selenium-api-2.39.0.jar C:\Users\grivera\.m2\repository\org\webbitserver\webbit\0.4.14\webbit-0.4.14.jar C:\Users\grivera\.m2\repository\io\netty\netty\3.5.2.Final\netty-3.5.2.Final.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-server\2.39.0\selenium-server-2.39.0.jar C:\Users\grivera\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.48\bcprov-jdk15on-1.48.jar C:\Users\grivera\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.48\bcpkix-jdk15on-1.48.jar C:\Users\grivera\.m2\repository\mx4j\mx4j-tools\3.0.1\mx4j-tools-3.0.1.jar C:\Users\grivera\.m2\repository\org\mortbay\jetty\servlet-api-2.5\6.1.9\servlet-api-2.5-6.1.9.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\jetty-repacked\7.6.1\jetty-repacked-7.6.1.jar C:\Users\grivera\.m2\repository\net\jcip\jcip-annotations\1.0\jcip-annotations-1.0.jar C:\Users\grivera\.m2\repository\org\yaml\snakeyaml\1.8\snakeyaml-1.8.jar C:\Users\grivera\.m2\repository\commons-codec\commons-codec\1.8\commons-codec-1.8.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\2.39.0\selenium-chrome-driver-2.39.0.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\2.39.0\selenium-remote-driver-2.39.0.jar C:\Users\grivera\.m2\repository\cglib\cglib-nodep\2.1_3\cglib-nodep-2.1_3.jar C:\Users\grivera\.m2\repository\org\json\json\20080701\json-20080701.jar C:\Users\grivera\.m2\repository\org\testng\testng\6.9.10\testng-6.9.10.jar C:\Users\grivera\.m2\repository\com\beust\jcommander\1.48\jcommander-1.48.jar C:\Users\grivera\.m2\repository\org\beanshell\bsh\2.0b4\bsh-2.0b4.jar C:\Users\grivera\.m2\repository\com\google\guava\guava\18.0\guava-18.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 55878 -protocol json -d C:\Users\grivera\workspace\test\test-output C:\Users\grivera\AppData\Local\Temp\testng-eclipse-1183546832\testng-customsuite.xml
+java -ea -classpath C:\eclipse\plugins\org.testng.eclipse_6.11.0.201703011520\lib\testng-remote.jar:C:\Users\grivera\workspace\test\target\test-classes:C:\Users\grivera\workspace\test\target\classes:C:\Users\grivera\.m2\repository\junit\junit\4.12\junit-4.12.jar:C:\Users\grivera\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-java\2.39.0\selenium-java-2.39.0.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-android-driver\2.39.0\selenium-android-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-htmlunit-driver\2.39.0\selenium-htmlunit-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\net\sourceforge\htmlunit\htmlunit\2.13\htmlunit-2.13.jar:C:\Users\grivera\.m2\repository\xalan\xalan\2.7.1\xalan-2.7.1.jar:C:\Users\grivera\.m2\repository\xalan\serializer\2.7.1\serializer-2.7.1.jar:C:\Users\grivera\.m2\repository\commons-collections\commons-collections\3.2.1\commons-collections-3.2.1.jar:C:\Users\grivera\.m2\repository\org\apache\commons\commons-lang3\3.1\commons-lang3-3.1.jar:C:\Users\grivera\.m2\repository\org\apache\httpcomponents\httpmime\4.3.1\httpmime-4.3.1.jar:C:\Users\grivera\.m2\repository\net\sourceforge\htmlunit\htmlunit-core-js\2.13\htmlunit-core-js-2.13.jar:C:\Users\grivera\.m2\repository\xerces\xercesImpl\2.11.0\xercesImpl-2.11.0.jar:C:\Users\grivera\.m2\repository\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar:C:\Users\grivera\.m2\repository\net\sourceforge\nekohtml\nekohtml\1.9.19\nekohtml-1.9.19.jar:C:\Users\grivera\.m2\repository\net\sourceforge\cssparser\cssparser\0.9.11\cssparser-0.9.11.jar:C:\Users\grivera\.m2\repository\org\w3c\css\sac\1.3\sac-1.3.jar:C:\Users\grivera\.m2\repository\commons-logging\commons-logging\1.1.3\commons-logging-1.1.3.jar:C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-websocket\8.1.12.v20130726\jetty-websocket-8.1.12.v20130726.jar:C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-util\8.1.12.v20130726\jetty-util-8.1.12.v20130726.jar:C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-io\8.1.12.v20130726\jetty-io-8.1.12.v20130726.jar:C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-http\8.1.12.v20130726\jetty-http-8.1.12.v20130726.jar:C:\Users\grivera\.m2\repository\org\apache\httpcomponents\httpclient\4.3.1\httpclient-4.3.1.jar:C:\Users\grivera\.m2\repository\org\apache\httpcomponents\httpcore\4.3\httpcore-4.3.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\2.39.0\selenium-firefox-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\commons-io\commons-io\2.2\commons-io-2.2.jar:C:\Users\grivera\.m2\repository\org\apache\commons\commons-exec\1.1\commons-exec-1.1.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\2.39.0\selenium-ie-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\net\java\dev\jna\jna\3.4.0\jna-3.4.0.jar:C:\Users\grivera\.m2\repository\net\java\dev\jna\platform\3.4.0\platform-3.4.0.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-iphone-driver\2.39.0\selenium-iphone-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\2.39.0\selenium-safari-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-support\2.39.0\selenium-support-2.39.0.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-api\2.39.0\selenium-api-2.39.0.jar:C:\Users\grivera\.m2\repository\org\webbitserver\webbit\0.4.14\webbit-0.4.14.jar:C:\Users\grivera\.m2\repository\io\netty\netty\3.5.2.Final\netty-3.5.2.Final.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-server\2.39.0\selenium-server-2.39.0.jar:C:\Users\grivera\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.48\bcprov-jdk15on-1.48.jar:C:\Users\grivera\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.48\bcpkix-jdk15on-1.48.jar:C:\Users\grivera\.m2\repository\mx4j\mx4j-tools\3.0.1\mx4j-tools-3.0.1.jar:C:\Users\grivera\.m2\repository\org\mortbay\jetty\servlet-api-2.5\6.1.9\servlet-api-2.5-6.1.9.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\jetty-repacked\7.6.1\jetty-repacked-7.6.1.jar:C:\Users\grivera\.m2\repository\net\jcip\jcip-annotations\1.0\jcip-annotations-1.0.jar:C:\Users\grivera\.m2\repository\org\yaml\snakeyaml\1.8\snakeyaml-1.8.jar:C:\Users\grivera\.m2\repository\commons-codec\commons-codec\1.8\commons-codec-1.8.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\2.39.0\selenium-chrome-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\2.39.0\selenium-remote-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\cglib\cglib-nodep\2.1_3\cglib-nodep-2.1_3.jar:C:\Users\grivera\.m2\repository\org\json\json\20080701\json-20080701.jar:C:\Users\grivera\.m2\repository\org\testng\testng\6.9.10\testng-6.9.10.jar:C:\Users\grivera\.m2\repository\com\beust\jcommander\1.48\jcommander-1.48.jar:C:\Users\grivera\.m2\repository\org\beanshell\bsh\2.0b4\bsh-2.0b4.jar:C:\Users\grivera\.m2\repository\com\google\guava\guava\18.0\guava-18.0.jar org.testng.remote.RemoteTestNG -serport 55878 -protocol json -d C:\Users\grivera\workspace\test\test-output C:\Users\grivera\AppData\Local\Temp\testng-eclipse-1183546832\testng-customsuite.xml
+!SESSION 2017-04-04 22:59:54.383 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_CO
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-04-04 23:00:57.835
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\grivera'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.recommenders.rcp 2 23 2017-04-05 08:48:13.836
+!MESSAGE Failed to parse news feed
+!STACK 0
+java.net.UnknownHostException: www.codetrails.com
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(Unknown Source)
+	at java.net.InetAddress.getAddressesFromNameService(Unknown Source)
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:102)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:319)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:206)
+	at org.eclipse.recommenders.internal.rcp.news.CheckForProjectNewsJob.getRSSFeed(CheckForProjectNewsJob.java:138)
+	at org.eclipse.recommenders.internal.rcp.news.CheckForProjectNewsJob.doRun(CheckForProjectNewsJob.java:89)
+	at org.eclipse.recommenders.internal.rcp.news.CheckForProjectNewsJob.run(CheckForProjectNewsJob.java:62)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.testng.eclipse 1 0 2017-04-06 23:26:21.895
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:src/test/java [in test]
+  <default> (...)
+  actions (...)
+  config (...)
+  herokuapp (...)
+  page (...)
+  util (...)
+
+!ENTRY org.testng.eclipse 1 0 2017-04-06 23:26:21.905
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:<default> [in src/test/java [in test]]
+
+!ENTRY org.testng.eclipse 1 0 2017-04-06 23:26:21.905
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:actions [in src/test/java [in test]]
+  Action.java
+    package actions
+    import org.openqa.jetty.html.Break
+    import org.openqa.selenium.By
+    import org.openqa.selenium.WebDriver
+    import org.openqa.selenium.WebElement
+    import org.openqa.selenium.support.ui.ExpectedConditions
+    import org.openqa.selenium.support.ui.Select
+    import org.openqa.selenium.support.ui.WebDriverWait
+    import org.openqa.selenium.interactions.*
+    import page.AddCita
+    import page.AddDoctor
+    import page.AddPaciente
+    import page.Inicio
+    import util.HerokuappConstant
+    class Action
+      AddPaciente _AddPatient
+      HerokuappConstant _HerokuappConstant
+      AddDoctor _AddDoctor
+      Inicio _Inicio
+      AddCita _AddCita
+      void MoveToElement(WebElement, WebDriver)
+      void AddDoctor(String, String, String, String, String, WebDriver)
+      void AddCita(String, String, String, String, WebDriver)
+      void AddPaciente(String, String, String, String, String, WebDriver)
+      void ClickMenuInicio(int, WebDriver)
+      void ClickInicio(WebDriver)
+
+!ENTRY org.testng.eclipse 1 0 2017-04-06 23:26:21.915
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:config [in src/test/java [in test]]
+  Config.java
+    package config
+    import java.io.File
+    import java.util.concurrent.TimeUnit
+    import org.openqa.selenium.WebDriver
+    import org.openqa.selenium.chrome.ChromeDriver
+    import org.openqa.selenium.firefox.FirefoxDriver
+    class Config
+      String CHROME_DRIVER
+      WebDriver driver
+      String baseUrl
+      File chromeDriver
+      String absolutePath
+      Boolean SetUp(String)
+      String getValueUrl()
+      WebDriver getValueDriver()
+
+!ENTRY org.testng.eclipse 1 0 2017-04-06 23:26:21.915
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:herokuapp [in src/test/java [in test]]
+  [Working copy] BasicTest.java
+    package herokuapp
+    import java.util.Calendar
+    import java.util.Date
+    import java.text.SimpleDateFormat
+    import java.util.logging.Level
+    import java.util.logging.Logger
+    import org.openqa.selenium.NoSuchElementException
+    import org.openqa.selenium.TimeoutException
+    import org.openqa.selenium.WebDriver
+    import org.testng.Assert
+    import org.testng.annotations.AfterTest
+    import org.testng.annotations.BeforeTest
+    import org.testng.annotations.Test
+    import actions.Action
+    import util.HerokuappConstant
+    import config.Config
+    import page.AddCita
+    import page.AddDoctor
+    import page.AddPaciente
+    class BasicTest
+      WebDriver _driver
+      StringBuilder verificationErrors
+      HerokuappConstant _HerokuppConstant
+      Action action
+      Logger logger
+      AddDoctor _AddDoctor
+      AddPaciente _AddPatient
+      AddCita _AddCita
+      String DATE_FORMAT_NOW
+      String DOCTOR_NAME
+      String DOCTOR_LASTNAME
+      String DOCTOR_TELEPHONE
+      String DOCTOR_ID_TYPE
+      String DOCTOR_ID
+      String PATIENT_NAME
+      String PATIENT_LASTNAME
+      String PATIENT_TELEPHONE
+      String PATIENT_ID_TYPE
+      String PATIENT_ID
+      String CITA_PATIENT
+      String CITA_DOCTOR
+      String CITA_DATE
+      String CITA_OBSERVA
+      int OPCIONADDOCTOR
+      int OPCIONADDPATIENT
+      int OPCIONADDCITA
+      WebDriver getDriver()
+      void setUp()
+      void tearDown()
+      void closeWebDriver()
+      void testFullRegression()
+
+!ENTRY org.testng.eclipse 1 0 2017-04-06 23:26:21.925
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:page [in src/test/java [in test]]
+  Inicio.java
+    package page
+    import org.openqa.selenium.By
+    import org.openqa.selenium.WebDriver
+    import org.openqa.selenium.WebElement
+    class Inicio
+      String I_ADD_DOCTOR
+      String I_ADD_PATIENT
+      String I_ADD_ROOM
+      String I_ADD_HOSPITAL
+      String I_HOSPITAL_LIST
+      String I_APPOINTMENTSCHEDULING
+      WebElement getIAddDoctorSelector(WebDriver)
+      WebElement getIAddPatientSelector(WebDriver)
+      WebElement getIAddRoomSelector(WebDriver)
+      WebElement getIAddHospitalSelector(WebDriver)
+      WebElement getIHospitalListSelector(WebDriver)
+      WebElement getIAppointmentSchedulingSelector(WebDriver)
+  [Working copy] AddDoctor.java
+    package page
+    import org.openqa.selenium.By
+    import org.openqa.selenium.WebDriver
+    import org.openqa.selenium.WebElement
+    class AddDoctor
+      String D_NAME
+      String D_LAST_NAME
+      String D_TELEPHONE
+      String D_IDENTIFICATION
+      String D_GUARDADO_EXITOSO
+      String D_IDENTIFICATION_TYPE
+      String D_SAVE_BUTTON
+      String D_HOME
+      WebElement getDNameSelector(WebDriver)
+      WebElement getDLastNameSelector(WebDriver)
+      WebElement getDTelephoneSelector(WebDriver)
+      WebElement getDIdentificationSelector(WebDriver)
+      WebElement getDdentificationTypeSelector(WebDriver)
+      WebElement getDSaveButtonSelector(WebDriver)
+      WebElement getDHomeButtonSelector(WebDriver)
+      WebElement getDSuccessMessage(WebDriver)
+  [Working copy] AddPaciente.java
+    package page
+    import org.openqa.selenium.By
+    import org.openqa.selenium.WebDriver
+    import org.openqa.selenium.WebElement
+    class AddPaciente
+      String P_NAME
+      String P_LAST_NAME
+      String P_TELEPHONE
+      String P_IDENTIFICATION
+      String P_GUARDADO_EXITOSO
+      String P_SALUD_PREPAGADA
+      String P_IDENTIFICATION_TYPE
+      String P_SAVE_BUTTON
+      String P_HOME
+      WebElement getPNameSelector(WebDriver)
+      WebElement getPLastNameSelector(WebDriver)
+      WebElement getPTelephoneSelector(WebDriver)
+      WebElement getPIdentificationSelector(WebDriver)
+      WebElement getPSPrepagadaSelector(WebDriver)
+      WebElement getPIdentificationTypeSelector(WebDriver)
+      WebElement getPSaveButtonSelector(WebDriver)
+      WebElement getPHomeButtonSelector(WebDriver)
+      WebElement getPSuccessMessage(WebDriver)
+  [Working copy] AddCita.java
+    package page
+    import org.openqa.selenium.By
+    import org.openqa.selenium.WebDriver
+    import org.openqa.selenium.WebElement
+    class AddCita
+      String C_DATE_PIKER
+      String C_ID_PATIENT
+      String C_ID_DOCTOR
+      String C_OBSERVACIONES
+      String C_SAVE_BUTTON
+      String C_HOME
+      String C_GUARDADO_EXITOSO
+      WebElement getCDateSelector(WebDriver)
+      WebElement getCIdPatientSelector(WebDriver)
+      WebElement getCIdDoctorSelector(WebDriver)
+      WebElement getCObservacionesSelector(WebDriver)
+      WebElement getCSaveButtonSelector(WebDriver)
+      WebElement getCHomeButtonSelector(WebDriver)
+      WebElement getCSuccessMessage(WebDriver)
+
+!ENTRY org.testng.eclipse 1 0 2017-04-06 23:26:21.925
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:util [in src/test/java [in test]]
+  HerokuappConstant.java
+    package util
+    class HerokuappConstant
+      String BASE_UI_URL
+      long Standard_Wait
+      HerokuappConstant()
+      static String getBase()
+      long getStandardWait()
+
+!ENTRY org.testng.eclipse 1 0 2017-04-06 23:26:23.065
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\eclipse\plugins\org.testng.eclipse_6.11.0.201703011520\lib\testng-remote.jar C:\Users\grivera\workspace\test\target\test-classes C:\Users\grivera\workspace\test\target\classes C:\Users\grivera\.m2\repository\junit\junit\4.12\junit-4.12.jar C:\Users\grivera\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-java\2.39.0\selenium-java-2.39.0.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-android-driver\2.39.0\selenium-android-driver-2.39.0.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-htmlunit-driver\2.39.0\selenium-htmlunit-driver-2.39.0.jar C:\Users\grivera\.m2\repository\net\sourceforge\htmlunit\htmlunit\2.13\htmlunit-2.13.jar C:\Users\grivera\.m2\repository\xalan\xalan\2.7.1\xalan-2.7.1.jar C:\Users\grivera\.m2\repository\xalan\serializer\2.7.1\serializer-2.7.1.jar C:\Users\grivera\.m2\repository\commons-collections\commons-collections\3.2.1\commons-collections-3.2.1.jar C:\Users\grivera\.m2\repository\org\apache\commons\commons-lang3\3.1\commons-lang3-3.1.jar C:\Users\grivera\.m2\repository\org\apache\httpcomponents\httpmime\4.3.1\httpmime-4.3.1.jar C:\Users\grivera\.m2\repository\net\sourceforge\htmlunit\htmlunit-core-js\2.13\htmlunit-core-js-2.13.jar C:\Users\grivera\.m2\repository\xerces\xercesImpl\2.11.0\xercesImpl-2.11.0.jar C:\Users\grivera\.m2\repository\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar C:\Users\grivera\.m2\repository\net\sourceforge\nekohtml\nekohtml\1.9.19\nekohtml-1.9.19.jar C:\Users\grivera\.m2\repository\net\sourceforge\cssparser\cssparser\0.9.11\cssparser-0.9.11.jar C:\Users\grivera\.m2\repository\org\w3c\css\sac\1.3\sac-1.3.jar C:\Users\grivera\.m2\repository\commons-logging\commons-logging\1.1.3\commons-logging-1.1.3.jar C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-websocket\8.1.12.v20130726\jetty-websocket-8.1.12.v20130726.jar C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-util\8.1.12.v20130726\jetty-util-8.1.12.v20130726.jar C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-io\8.1.12.v20130726\jetty-io-8.1.12.v20130726.jar C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-http\8.1.12.v20130726\jetty-http-8.1.12.v20130726.jar C:\Users\grivera\.m2\repository\org\apache\httpcomponents\httpclient\4.3.1\httpclient-4.3.1.jar C:\Users\grivera\.m2\repository\org\apache\httpcomponents\httpcore\4.3\httpcore-4.3.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\2.39.0\selenium-firefox-driver-2.39.0.jar C:\Users\grivera\.m2\repository\commons-io\commons-io\2.2\commons-io-2.2.jar C:\Users\grivera\.m2\repository\org\apache\commons\commons-exec\1.1\commons-exec-1.1.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\2.39.0\selenium-ie-driver-2.39.0.jar C:\Users\grivera\.m2\repository\net\java\dev\jna\jna\3.4.0\jna-3.4.0.jar C:\Users\grivera\.m2\repository\net\java\dev\jna\platform\3.4.0\platform-3.4.0.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-iphone-driver\2.39.0\selenium-iphone-driver-2.39.0.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\2.39.0\selenium-safari-driver-2.39.0.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-support\2.39.0\selenium-support-2.39.0.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-api\2.39.0\selenium-api-2.39.0.jar C:\Users\grivera\.m2\repository\org\webbitserver\webbit\0.4.14\webbit-0.4.14.jar C:\Users\grivera\.m2\repository\io\netty\netty\3.5.2.Final\netty-3.5.2.Final.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-server\2.39.0\selenium-server-2.39.0.jar C:\Users\grivera\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.48\bcprov-jdk15on-1.48.jar C:\Users\grivera\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.48\bcpkix-jdk15on-1.48.jar C:\Users\grivera\.m2\repository\mx4j\mx4j-tools\3.0.1\mx4j-tools-3.0.1.jar C:\Users\grivera\.m2\repository\org\mortbay\jetty\servlet-api-2.5\6.1.9\servlet-api-2.5-6.1.9.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\jetty-repacked\7.6.1\jetty-repacked-7.6.1.jar C:\Users\grivera\.m2\repository\net\jcip\jcip-annotations\1.0\jcip-annotations-1.0.jar C:\Users\grivera\.m2\repository\org\yaml\snakeyaml\1.8\snakeyaml-1.8.jar C:\Users\grivera\.m2\repository\commons-codec\commons-codec\1.8\commons-codec-1.8.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\2.39.0\selenium-chrome-driver-2.39.0.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\2.39.0\selenium-remote-driver-2.39.0.jar C:\Users\grivera\.m2\repository\cglib\cglib-nodep\2.1_3\cglib-nodep-2.1_3.jar C:\Users\grivera\.m2\repository\org\json\json\20080701\json-20080701.jar C:\Users\grivera\.m2\repository\org\testng\testng\6.9.10\testng-6.9.10.jar C:\Users\grivera\.m2\repository\com\beust\jcommander\1.48\jcommander-1.48.jar C:\Users\grivera\.m2\repository\org\beanshell\bsh\2.0b4\bsh-2.0b4.jar C:\Users\grivera\.m2\repository\com\google\guava\guava\18.0\guava-18.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 61879 -protocol json -d C:\Users\grivera\workspace\test\test-output C:\Users\grivera\AppData\Local\Temp\testng-eclipse--1730385442\testng-customsuite.xml
+java -ea -classpath C:\eclipse\plugins\org.testng.eclipse_6.11.0.201703011520\lib\testng-remote.jar:C:\Users\grivera\workspace\test\target\test-classes:C:\Users\grivera\workspace\test\target\classes:C:\Users\grivera\.m2\repository\junit\junit\4.12\junit-4.12.jar:C:\Users\grivera\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-java\2.39.0\selenium-java-2.39.0.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-android-driver\2.39.0\selenium-android-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-htmlunit-driver\2.39.0\selenium-htmlunit-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\net\sourceforge\htmlunit\htmlunit\2.13\htmlunit-2.13.jar:C:\Users\grivera\.m2\repository\xalan\xalan\2.7.1\xalan-2.7.1.jar:C:\Users\grivera\.m2\repository\xalan\serializer\2.7.1\serializer-2.7.1.jar:C:\Users\grivera\.m2\repository\commons-collections\commons-collections\3.2.1\commons-collections-3.2.1.jar:C:\Users\grivera\.m2\repository\org\apache\commons\commons-lang3\3.1\commons-lang3-3.1.jar:C:\Users\grivera\.m2\repository\org\apache\httpcomponents\httpmime\4.3.1\httpmime-4.3.1.jar:C:\Users\grivera\.m2\repository\net\sourceforge\htmlunit\htmlunit-core-js\2.13\htmlunit-core-js-2.13.jar:C:\Users\grivera\.m2\repository\xerces\xercesImpl\2.11.0\xercesImpl-2.11.0.jar:C:\Users\grivera\.m2\repository\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar:C:\Users\grivera\.m2\repository\net\sourceforge\nekohtml\nekohtml\1.9.19\nekohtml-1.9.19.jar:C:\Users\grivera\.m2\repository\net\sourceforge\cssparser\cssparser\0.9.11\cssparser-0.9.11.jar:C:\Users\grivera\.m2\repository\org\w3c\css\sac\1.3\sac-1.3.jar:C:\Users\grivera\.m2\repository\commons-logging\commons-logging\1.1.3\commons-logging-1.1.3.jar:C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-websocket\8.1.12.v20130726\jetty-websocket-8.1.12.v20130726.jar:C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-util\8.1.12.v20130726\jetty-util-8.1.12.v20130726.jar:C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-io\8.1.12.v20130726\jetty-io-8.1.12.v20130726.jar:C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-http\8.1.12.v20130726\jetty-http-8.1.12.v20130726.jar:C:\Users\grivera\.m2\repository\org\apache\httpcomponents\httpclient\4.3.1\httpclient-4.3.1.jar:C:\Users\grivera\.m2\repository\org\apache\httpcomponents\httpcore\4.3\httpcore-4.3.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\2.39.0\selenium-firefox-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\commons-io\commons-io\2.2\commons-io-2.2.jar:C:\Users\grivera\.m2\repository\org\apache\commons\commons-exec\1.1\commons-exec-1.1.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\2.39.0\selenium-ie-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\net\java\dev\jna\jna\3.4.0\jna-3.4.0.jar:C:\Users\grivera\.m2\repository\net\java\dev\jna\platform\3.4.0\platform-3.4.0.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-iphone-driver\2.39.0\selenium-iphone-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\2.39.0\selenium-safari-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-support\2.39.0\selenium-support-2.39.0.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-api\2.39.0\selenium-api-2.39.0.jar:C:\Users\grivera\.m2\repository\org\webbitserver\webbit\0.4.14\webbit-0.4.14.jar:C:\Users\grivera\.m2\repository\io\netty\netty\3.5.2.Final\netty-3.5.2.Final.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-server\2.39.0\selenium-server-2.39.0.jar:C:\Users\grivera\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.48\bcprov-jdk15on-1.48.jar:C:\Users\grivera\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.48\bcpkix-jdk15on-1.48.jar:C:\Users\grivera\.m2\repository\mx4j\mx4j-tools\3.0.1\mx4j-tools-3.0.1.jar:C:\Users\grivera\.m2\repository\org\mortbay\jetty\servlet-api-2.5\6.1.9\servlet-api-2.5-6.1.9.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\jetty-repacked\7.6.1\jetty-repacked-7.6.1.jar:C:\Users\grivera\.m2\repository\net\jcip\jcip-annotations\1.0\jcip-annotations-1.0.jar:C:\Users\grivera\.m2\repository\org\yaml\snakeyaml\1.8\snakeyaml-1.8.jar:C:\Users\grivera\.m2\repository\commons-codec\commons-codec\1.8\commons-codec-1.8.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\2.39.0\selenium-chrome-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\2.39.0\selenium-remote-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\cglib\cglib-nodep\2.1_3\cglib-nodep-2.1_3.jar:C:\Users\grivera\.m2\repository\org\json\json\20080701\json-20080701.jar:C:\Users\grivera\.m2\repository\org\testng\testng\6.9.10\testng-6.9.10.jar:C:\Users\grivera\.m2\repository\com\beust\jcommander\1.48\jcommander-1.48.jar:C:\Users\grivera\.m2\repository\org\beanshell\bsh\2.0b4\bsh-2.0b4.jar:C:\Users\grivera\.m2\repository\com\google\guava\guava\18.0\guava-18.0.jar org.testng.remote.RemoteTestNG -serport 61879 -protocol json -d C:\Users\grivera\workspace\test\test-output C:\Users\grivera\AppData\Local\Temp\testng-eclipse--1730385442\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2017-04-06 23:36:00.154
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:src/test/java [in test]
+  <default> (...)
+  actions (...)
+  config (...)
+  herokuapp (...)
+  page (...)
+  util (...)
+
+!ENTRY org.testng.eclipse 1 0 2017-04-06 23:36:00.154
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:<default> [in src/test/java [in test]]
+
+!ENTRY org.testng.eclipse 1 0 2017-04-06 23:36:00.164
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:actions [in src/test/java [in test]]
+  [Working copy] Action.java
+    package actions
+    import org.openqa.jetty.html.Break
+    import org.openqa.selenium.By
+    import org.openqa.selenium.WebDriver
+    import org.openqa.selenium.WebElement
+    import org.openqa.selenium.support.ui.ExpectedConditions
+    import org.openqa.selenium.support.ui.Select
+    import org.openqa.selenium.support.ui.WebDriverWait
+    import org.openqa.selenium.interactions.*
+    import page.AddCita
+    import page.AddDoctor
+    import page.AddPaciente
+    import page.Inicio
+    import util.HerokuappConstant
+    class Action
+      AddPaciente _AddPatient
+      HerokuappConstant _HerokuappConstant
+      AddDoctor _AddDoctor
+      Inicio _Inicio
+      AddCita _AddCita
+      void MoveToElement(WebElement, WebDriver)
+      void AddDoctor(String, String, String, String, String, WebDriver)
+      void AddCita(String, String, String, String, WebDriver)
+      void AddPaciente(String, String, String, String, String, WebDriver)
+      void ClickMenuInicio(int, WebDriver)
+      void ClickInicio(WebDriver)
+
+!ENTRY org.testng.eclipse 1 0 2017-04-06 23:36:00.164
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:config [in src/test/java [in test]]
+  Config.java
+    package config
+    import java.io.File
+    import java.util.concurrent.TimeUnit
+    import org.openqa.selenium.WebDriver
+    import org.openqa.selenium.chrome.ChromeDriver
+    import org.openqa.selenium.firefox.FirefoxDriver
+    class Config
+      String CHROME_DRIVER
+      WebDriver driver
+      String baseUrl
+      File chromeDriver
+      String absolutePath
+      Boolean SetUp(String)
+      String getValueUrl()
+      WebDriver getValueDriver()
+
+!ENTRY org.testng.eclipse 1 0 2017-04-06 23:36:00.174
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:herokuapp [in src/test/java [in test]]
+  [Working copy] BasicTest.java
+    package herokuapp
+    import java.util.Calendar
+    import java.util.Date
+    import java.text.SimpleDateFormat
+    import java.util.logging.Level
+    import java.util.logging.Logger
+    import org.openqa.selenium.NoSuchElementException
+    import org.openqa.selenium.TimeoutException
+    import org.openqa.selenium.WebDriver
+    import org.testng.Assert
+    import org.testng.annotations.AfterTest
+    import org.testng.annotations.BeforeTest
+    import org.testng.annotations.Test
+    import actions.Action
+    import util.HerokuappConstant
+    import config.Config
+    import page.AddCita
+    import page.AddDoctor
+    import page.AddPaciente
+    class BasicTest
+      WebDriver _driver
+      StringBuilder verificationErrors
+      HerokuappConstant _HerokuppConstant
+      Action action
+      Logger logger
+      AddDoctor _AddDoctor
+      AddPaciente _AddPatient
+      AddCita _AddCita
+      String DATE_FORMAT_NOW
+      String DOCTOR_NAME
+      String DOCTOR_LASTNAME
+      String DOCTOR_TELEPHONE
+      String DOCTOR_ID_TYPE
+      String DOCTOR_ID
+      String PATIENT_NAME
+      String PATIENT_LASTNAME
+      String PATIENT_TELEPHONE
+      String PATIENT_ID_TYPE
+      String PATIENT_ID
+      String CITA_PATIENT
+      String CITA_DOCTOR
+      String CITA_DATE
+      String CITA_OBSERVA
+      int OPCIONADDOCTOR
+      int OPCIONADDPATIENT
+      int OPCIONADDCITA
+      WebDriver getDriver()
+      void setUp()
+      void tearDown()
+      void closeWebDriver()
+      void testFullRegression()
+
+!ENTRY org.testng.eclipse 1 0 2017-04-06 23:36:00.174
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:page [in src/test/java [in test]]
+  [Working copy] Inicio.java
+    package page
+    import org.openqa.selenium.By
+    import org.openqa.selenium.WebDriver
+    import org.openqa.selenium.WebElement
+    class Inicio
+      String I_ADD_DOCTOR
+      String I_ADD_PATIENT
+      String I_ADD_ROOM
+      String I_ADD_HOSPITAL
+      String I_HOSPITAL_LIST
+      String I_APPOINTMENTSCHEDULING
+      String I_HOME
+      WebElement getIAddDoctorSelector(WebDriver)
+      WebElement getIAddPatientSelector(WebDriver)
+      WebElement getIAddRoomSelector(WebDriver)
+      WebElement getIAddHospitalSelector(WebDriver)
+      WebElement getIHospitalListSelector(WebDriver)
+      WebElement getIAppointmentSchedulingSelector(WebDriver)
+      WebElement getIAddHomeSelector(WebDriver)
+  [Working copy] AddDoctor.java
+    package page
+    import org.openqa.selenium.By
+    import org.openqa.selenium.WebDriver
+    import org.openqa.selenium.WebElement
+    class AddDoctor
+      String D_NAME
+      String D_LAST_NAME
+      String D_TELEPHONE
+      String D_IDENTIFICATION
+      String D_GUARDADO_EXITOSO
+      String D_IDENTIFICATION_TYPE
+      String D_SAVE_BUTTON
+      String D_HOME
+      WebElement getDNameSelector(WebDriver)
+      WebElement getDLastNameSelector(WebDriver)
+      WebElement getDTelephoneSelector(WebDriver)
+      WebElement getDIdentificationSelector(WebDriver)
+      WebElement getDdentificationTypeSelector(WebDriver)
+      WebElement getDSaveButtonSelector(WebDriver)
+      WebElement getDHomeButtonSelector(WebDriver)
+      WebElement getDSuccessMessage(WebDriver)
+  [Working copy] AddPaciente.java
+    package page
+    import org.openqa.selenium.By
+    import org.openqa.selenium.WebDriver
+    import org.openqa.selenium.WebElement
+    class AddPaciente
+      String P_NAME
+      String P_LAST_NAME
+      String P_TELEPHONE
+      String P_IDENTIFICATION
+      String P_GUARDADO_EXITOSO
+      String P_SALUD_PREPAGADA
+      String P_IDENTIFICATION_TYPE
+      String P_SAVE_BUTTON
+      String P_HOME
+      WebElement getPNameSelector(WebDriver)
+      WebElement getPLastNameSelector(WebDriver)
+      WebElement getPTelephoneSelector(WebDriver)
+      WebElement getPIdentificationSelector(WebDriver)
+      WebElement getPSPrepagadaSelector(WebDriver)
+      WebElement getPIdentificationTypeSelector(WebDriver)
+      WebElement getPSaveButtonSelector(WebDriver)
+      WebElement getPHomeButtonSelector(WebDriver)
+      WebElement getPSuccessMessage(WebDriver)
+  [Working copy] AddCita.java
+    package page
+    import org.openqa.selenium.By
+    import org.openqa.selenium.WebDriver
+    import org.openqa.selenium.WebElement
+    class AddCita
+      String C_DATE_PIKER
+      String C_ID_PATIENT
+      String C_ID_DOCTOR
+      String C_OBSERVACIONES
+      String C_SAVE_BUTTON
+      String C_HOME
+      String C_GUARDADO_EXITOSO
+      WebElement getCDateSelector(WebDriver)
+      WebElement getCIdPatientSelector(WebDriver)
+      WebElement getCIdDoctorSelector(WebDriver)
+      WebElement getCObservacionesSelector(WebDriver)
+      WebElement getCSaveButtonSelector(WebDriver)
+      WebElement getCHomeButtonSelector(WebDriver)
+      WebElement getCSuccessMessage(WebDriver)
+
+!ENTRY org.testng.eclipse 1 0 2017-04-06 23:36:00.174
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:util [in src/test/java [in test]]
+  HerokuappConstant.java
+    package util
+    class HerokuappConstant
+      String BASE_UI_URL
+      long Standard_Wait
+      HerokuappConstant()
+      static String getBase()
+      long getStandardWait()
+
+!ENTRY org.testng.eclipse 1 0 2017-04-06 23:36:00.429
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\eclipse\plugins\org.testng.eclipse_6.11.0.201703011520\lib\testng-remote.jar C:\Users\grivera\workspace\test\target\test-classes C:\Users\grivera\workspace\test\target\classes C:\Users\grivera\.m2\repository\junit\junit\4.12\junit-4.12.jar C:\Users\grivera\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-java\2.39.0\selenium-java-2.39.0.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-android-driver\2.39.0\selenium-android-driver-2.39.0.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-htmlunit-driver\2.39.0\selenium-htmlunit-driver-2.39.0.jar C:\Users\grivera\.m2\repository\net\sourceforge\htmlunit\htmlunit\2.13\htmlunit-2.13.jar C:\Users\grivera\.m2\repository\xalan\xalan\2.7.1\xalan-2.7.1.jar C:\Users\grivera\.m2\repository\xalan\serializer\2.7.1\serializer-2.7.1.jar C:\Users\grivera\.m2\repository\commons-collections\commons-collections\3.2.1\commons-collections-3.2.1.jar C:\Users\grivera\.m2\repository\org\apache\commons\commons-lang3\3.1\commons-lang3-3.1.jar C:\Users\grivera\.m2\repository\org\apache\httpcomponents\httpmime\4.3.1\httpmime-4.3.1.jar C:\Users\grivera\.m2\repository\net\sourceforge\htmlunit\htmlunit-core-js\2.13\htmlunit-core-js-2.13.jar C:\Users\grivera\.m2\repository\xerces\xercesImpl\2.11.0\xercesImpl-2.11.0.jar C:\Users\grivera\.m2\repository\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar C:\Users\grivera\.m2\repository\net\sourceforge\nekohtml\nekohtml\1.9.19\nekohtml-1.9.19.jar C:\Users\grivera\.m2\repository\net\sourceforge\cssparser\cssparser\0.9.11\cssparser-0.9.11.jar C:\Users\grivera\.m2\repository\org\w3c\css\sac\1.3\sac-1.3.jar C:\Users\grivera\.m2\repository\commons-logging\commons-logging\1.1.3\commons-logging-1.1.3.jar C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-websocket\8.1.12.v20130726\jetty-websocket-8.1.12.v20130726.jar C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-util\8.1.12.v20130726\jetty-util-8.1.12.v20130726.jar C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-io\8.1.12.v20130726\jetty-io-8.1.12.v20130726.jar C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-http\8.1.12.v20130726\jetty-http-8.1.12.v20130726.jar C:\Users\grivera\.m2\repository\org\apache\httpcomponents\httpclient\4.3.1\httpclient-4.3.1.jar C:\Users\grivera\.m2\repository\org\apache\httpcomponents\httpcore\4.3\httpcore-4.3.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\2.39.0\selenium-firefox-driver-2.39.0.jar C:\Users\grivera\.m2\repository\commons-io\commons-io\2.2\commons-io-2.2.jar C:\Users\grivera\.m2\repository\org\apache\commons\commons-exec\1.1\commons-exec-1.1.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\2.39.0\selenium-ie-driver-2.39.0.jar C:\Users\grivera\.m2\repository\net\java\dev\jna\jna\3.4.0\jna-3.4.0.jar C:\Users\grivera\.m2\repository\net\java\dev\jna\platform\3.4.0\platform-3.4.0.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-iphone-driver\2.39.0\selenium-iphone-driver-2.39.0.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\2.39.0\selenium-safari-driver-2.39.0.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-support\2.39.0\selenium-support-2.39.0.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-api\2.39.0\selenium-api-2.39.0.jar C:\Users\grivera\.m2\repository\org\webbitserver\webbit\0.4.14\webbit-0.4.14.jar C:\Users\grivera\.m2\repository\io\netty\netty\3.5.2.Final\netty-3.5.2.Final.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-server\2.39.0\selenium-server-2.39.0.jar C:\Users\grivera\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.48\bcprov-jdk15on-1.48.jar C:\Users\grivera\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.48\bcpkix-jdk15on-1.48.jar C:\Users\grivera\.m2\repository\mx4j\mx4j-tools\3.0.1\mx4j-tools-3.0.1.jar C:\Users\grivera\.m2\repository\org\mortbay\jetty\servlet-api-2.5\6.1.9\servlet-api-2.5-6.1.9.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\jetty-repacked\7.6.1\jetty-repacked-7.6.1.jar C:\Users\grivera\.m2\repository\net\jcip\jcip-annotations\1.0\jcip-annotations-1.0.jar C:\Users\grivera\.m2\repository\org\yaml\snakeyaml\1.8\snakeyaml-1.8.jar C:\Users\grivera\.m2\repository\commons-codec\commons-codec\1.8\commons-codec-1.8.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\2.39.0\selenium-chrome-driver-2.39.0.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\2.39.0\selenium-remote-driver-2.39.0.jar C:\Users\grivera\.m2\repository\cglib\cglib-nodep\2.1_3\cglib-nodep-2.1_3.jar C:\Users\grivera\.m2\repository\org\json\json\20080701\json-20080701.jar C:\Users\grivera\.m2\repository\org\testng\testng\6.9.10\testng-6.9.10.jar C:\Users\grivera\.m2\repository\com\beust\jcommander\1.48\jcommander-1.48.jar C:\Users\grivera\.m2\repository\org\beanshell\bsh\2.0b4\bsh-2.0b4.jar C:\Users\grivera\.m2\repository\com\google\guava\guava\18.0\guava-18.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 61980 -protocol json -d C:\Users\grivera\workspace\test\test-output C:\Users\grivera\AppData\Local\Temp\testng-eclipse-849396449\testng-customsuite.xml
+java -ea -classpath C:\eclipse\plugins\org.testng.eclipse_6.11.0.201703011520\lib\testng-remote.jar:C:\Users\grivera\workspace\test\target\test-classes:C:\Users\grivera\workspace\test\target\classes:C:\Users\grivera\.m2\repository\junit\junit\4.12\junit-4.12.jar:C:\Users\grivera\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-java\2.39.0\selenium-java-2.39.0.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-android-driver\2.39.0\selenium-android-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-htmlunit-driver\2.39.0\selenium-htmlunit-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\net\sourceforge\htmlunit\htmlunit\2.13\htmlunit-2.13.jar:C:\Users\grivera\.m2\repository\xalan\xalan\2.7.1\xalan-2.7.1.jar:C:\Users\grivera\.m2\repository\xalan\serializer\2.7.1\serializer-2.7.1.jar:C:\Users\grivera\.m2\repository\commons-collections\commons-collections\3.2.1\commons-collections-3.2.1.jar:C:\Users\grivera\.m2\repository\org\apache\commons\commons-lang3\3.1\commons-lang3-3.1.jar:C:\Users\grivera\.m2\repository\org\apache\httpcomponents\httpmime\4.3.1\httpmime-4.3.1.jar:C:\Users\grivera\.m2\repository\net\sourceforge\htmlunit\htmlunit-core-js\2.13\htmlunit-core-js-2.13.jar:C:\Users\grivera\.m2\repository\xerces\xercesImpl\2.11.0\xercesImpl-2.11.0.jar:C:\Users\grivera\.m2\repository\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar:C:\Users\grivera\.m2\repository\net\sourceforge\nekohtml\nekohtml\1.9.19\nekohtml-1.9.19.jar:C:\Users\grivera\.m2\repository\net\sourceforge\cssparser\cssparser\0.9.11\cssparser-0.9.11.jar:C:\Users\grivera\.m2\repository\org\w3c\css\sac\1.3\sac-1.3.jar:C:\Users\grivera\.m2\repository\commons-logging\commons-logging\1.1.3\commons-logging-1.1.3.jar:C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-websocket\8.1.12.v20130726\jetty-websocket-8.1.12.v20130726.jar:C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-util\8.1.12.v20130726\jetty-util-8.1.12.v20130726.jar:C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-io\8.1.12.v20130726\jetty-io-8.1.12.v20130726.jar:C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-http\8.1.12.v20130726\jetty-http-8.1.12.v20130726.jar:C:\Users\grivera\.m2\repository\org\apache\httpcomponents\httpclient\4.3.1\httpclient-4.3.1.jar:C:\Users\grivera\.m2\repository\org\apache\httpcomponents\httpcore\4.3\httpcore-4.3.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\2.39.0\selenium-firefox-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\commons-io\commons-io\2.2\commons-io-2.2.jar:C:\Users\grivera\.m2\repository\org\apache\commons\commons-exec\1.1\commons-exec-1.1.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\2.39.0\selenium-ie-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\net\java\dev\jna\jna\3.4.0\jna-3.4.0.jar:C:\Users\grivera\.m2\repository\net\java\dev\jna\platform\3.4.0\platform-3.4.0.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-iphone-driver\2.39.0\selenium-iphone-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\2.39.0\selenium-safari-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-support\2.39.0\selenium-support-2.39.0.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-api\2.39.0\selenium-api-2.39.0.jar:C:\Users\grivera\.m2\repository\org\webbitserver\webbit\0.4.14\webbit-0.4.14.jar:C:\Users\grivera\.m2\repository\io\netty\netty\3.5.2.Final\netty-3.5.2.Final.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-server\2.39.0\selenium-server-2.39.0.jar:C:\Users\grivera\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.48\bcprov-jdk15on-1.48.jar:C:\Users\grivera\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.48\bcpkix-jdk15on-1.48.jar:C:\Users\grivera\.m2\repository\mx4j\mx4j-tools\3.0.1\mx4j-tools-3.0.1.jar:C:\Users\grivera\.m2\repository\org\mortbay\jetty\servlet-api-2.5\6.1.9\servlet-api-2.5-6.1.9.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\jetty-repacked\7.6.1\jetty-repacked-7.6.1.jar:C:\Users\grivera\.m2\repository\net\jcip\jcip-annotations\1.0\jcip-annotations-1.0.jar:C:\Users\grivera\.m2\repository\org\yaml\snakeyaml\1.8\snakeyaml-1.8.jar:C:\Users\grivera\.m2\repository\commons-codec\commons-codec\1.8\commons-codec-1.8.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\2.39.0\selenium-chrome-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\2.39.0\selenium-remote-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\cglib\cglib-nodep\2.1_3\cglib-nodep-2.1_3.jar:C:\Users\grivera\.m2\repository\org\json\json\20080701\json-20080701.jar:C:\Users\grivera\.m2\repository\org\testng\testng\6.9.10\testng-6.9.10.jar:C:\Users\grivera\.m2\repository\com\beust\jcommander\1.48\jcommander-1.48.jar:C:\Users\grivera\.m2\repository\org\beanshell\bsh\2.0b4\bsh-2.0b4.jar:C:\Users\grivera\.m2\repository\com\google\guava\guava\18.0\guava-18.0.jar org.testng.remote.RemoteTestNG -serport 61980 -protocol json -d C:\Users\grivera\workspace\test\test-output C:\Users\grivera\AppData\Local\Temp\testng-eclipse-849396449\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2017-04-06 23:40:07.794
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:src/test/java [in test]
+  <default> (...)
+  actions (...)
+  config (...)
+  herokuapp (...)
+  page (...)
+  util (...)
+
+!ENTRY org.testng.eclipse 1 0 2017-04-06 23:40:07.794
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:<default> [in src/test/java [in test]]
+
+!ENTRY org.testng.eclipse 1 0 2017-04-06 23:40:07.794
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:actions [in src/test/java [in test]]
+  [Working copy] Action.java
+    package actions
+    import org.openqa.jetty.html.Break
+    import org.openqa.selenium.By
+    import org.openqa.selenium.WebDriver
+    import org.openqa.selenium.WebElement
+    import org.openqa.selenium.support.ui.ExpectedConditions
+    import org.openqa.selenium.support.ui.Select
+    import org.openqa.selenium.support.ui.WebDriverWait
+    import org.openqa.selenium.interactions.*
+    import page.AddCita
+    import page.AddDoctor
+    import page.AddPaciente
+    import page.Inicio
+    import util.HerokuappConstant
+    class Action
+      AddPaciente _AddPatient
+      HerokuappConstant _HerokuappConstant
+      AddDoctor _AddDoctor
+      Inicio _Inicio
+      AddCita _AddCita
+      void MoveToElement(WebElement, WebDriver)
+      void AddDoctor(String, String, String, String, String, WebDriver)
+      void AddCita(String, String, String, String, WebDriver)
+      void AddPaciente(String, String, String, String, String, WebDriver)
+      void ClickMenuInicio(int, WebDriver)
+      void ClickInicio(WebDriver)
+
+!ENTRY org.testng.eclipse 1 0 2017-04-06 23:40:07.794
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:config [in src/test/java [in test]]
+  Config.java
+    package config
+    import java.io.File
+    import java.util.concurrent.TimeUnit
+    import org.openqa.selenium.WebDriver
+    import org.openqa.selenium.chrome.ChromeDriver
+    import org.openqa.selenium.firefox.FirefoxDriver
+    class Config
+      String CHROME_DRIVER
+      WebDriver driver
+      String baseUrl
+      File chromeDriver
+      String absolutePath
+      Boolean SetUp(String)
+      String getValueUrl()
+      WebDriver getValueDriver()
+
+!ENTRY org.testng.eclipse 1 0 2017-04-06 23:40:07.794
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:herokuapp [in src/test/java [in test]]
+  [Working copy] BasicTest.java
+    package herokuapp
+    import java.util.Calendar
+    import java.util.Date
+    import java.text.SimpleDateFormat
+    import java.util.logging.Level
+    import java.util.logging.Logger
+    import org.openqa.selenium.NoSuchElementException
+    import org.openqa.selenium.TimeoutException
+    import org.openqa.selenium.WebDriver
+    import org.testng.Assert
+    import org.testng.annotations.AfterTest
+    import org.testng.annotations.BeforeTest
+    import org.testng.annotations.Test
+    import actions.Action
+    import util.HerokuappConstant
+    import config.Config
+    import page.AddCita
+    import page.AddDoctor
+    import page.AddPaciente
+    class BasicTest
+      WebDriver _driver
+      StringBuilder verificationErrors
+      HerokuappConstant _HerokuppConstant
+      Action action
+      Logger logger
+      AddDoctor _AddDoctor
+      AddPaciente _AddPatient
+      AddCita _AddCita
+      String DATE_FORMAT_NOW
+      String DOCTOR_NAME
+      String DOCTOR_LASTNAME
+      String DOCTOR_TELEPHONE
+      String DOCTOR_ID_TYPE
+      String DOCTOR_ID
+      String PATIENT_NAME
+      String PATIENT_LASTNAME
+      String PATIENT_TELEPHONE
+      String PATIENT_ID_TYPE
+      String PATIENT_ID
+      String CITA_PATIENT
+      String CITA_DOCTOR
+      String CITA_DATE
+      String CITA_OBSERVA
+      int OPCIONADDOCTOR
+      int OPCIONADDPATIENT
+      int OPCIONADDCITA
+      WebDriver getDriver()
+      void setUp()
+      void tearDown()
+      void closeWebDriver()
+      void testFullRegression()
+
+!ENTRY org.testng.eclipse 1 0 2017-04-06 23:40:07.794
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:page [in src/test/java [in test]]
+  [Working copy] Inicio.java
+    package page
+    import org.openqa.selenium.By
+    import org.openqa.selenium.WebDriver
+    import org.openqa.selenium.WebElement
+    class Inicio
+      String I_ADD_DOCTOR
+      String I_ADD_PATIENT
+      String I_ADD_ROOM
+      String I_ADD_HOSPITAL
+      String I_HOSPITAL_LIST
+      String I_APPOINTMENTSCHEDULING
+      String I_HOME
+      WebElement getIAddDoctorSelector(WebDriver)
+      WebElement getIAddPatientSelector(WebDriver)
+      WebElement getIAddRoomSelector(WebDriver)
+      WebElement getIAddHospitalSelector(WebDriver)
+      WebElement getIHospitalListSelector(WebDriver)
+      WebElement getIAppointmentSchedulingSelector(WebDriver)
+      WebElement getIAddHomeSelector(WebDriver)
+  [Working copy] AddDoctor.java
+    package page
+    import org.openqa.selenium.By
+    import org.openqa.selenium.WebDriver
+    import org.openqa.selenium.WebElement
+    class AddDoctor
+      String D_NAME
+      String D_LAST_NAME
+      String D_TELEPHONE
+      String D_IDENTIFICATION
+      String D_GUARDADO_EXITOSO
+      String D_IDENTIFICATION_TYPE
+      String D_SAVE_BUTTON
+      String D_HOME
+      WebElement getDNameSelector(WebDriver)
+      WebElement getDLastNameSelector(WebDriver)
+      WebElement getDTelephoneSelector(WebDriver)
+      WebElement getDIdentificationSelector(WebDriver)
+      WebElement getDdentificationTypeSelector(WebDriver)
+      WebElement getDSaveButtonSelector(WebDriver)
+      WebElement getDHomeButtonSelector(WebDriver)
+      WebElement getDSuccessMessage(WebDriver)
+  [Working copy] AddPaciente.java
+    package page
+    import org.openqa.selenium.By
+    import org.openqa.selenium.WebDriver
+    import org.openqa.selenium.WebElement
+    class AddPaciente
+      String P_NAME
+      String P_LAST_NAME
+      String P_TELEPHONE
+      String P_IDENTIFICATION
+      String P_GUARDADO_EXITOSO
+      String P_SALUD_PREPAGADA
+      String P_IDENTIFICATION_TYPE
+      String P_SAVE_BUTTON
+      String P_HOME
+      WebElement getPNameSelector(WebDriver)
+      WebElement getPLastNameSelector(WebDriver)
+      WebElement getPTelephoneSelector(WebDriver)
+      WebElement getPIdentificationSelector(WebDriver)
+      WebElement getPSPrepagadaSelector(WebDriver)
+      WebElement getPIdentificationTypeSelector(WebDriver)
+      WebElement getPSaveButtonSelector(WebDriver)
+      WebElement getPHomeButtonSelector(WebDriver)
+      WebElement getPSuccessMessage(WebDriver)
+  [Working copy] AddCita.java
+    package page
+    import org.openqa.selenium.By
+    import org.openqa.selenium.WebDriver
+    import org.openqa.selenium.WebElement
+    class AddCita
+      String C_DATE_PIKER
+      String C_ID_PATIENT
+      String C_ID_DOCTOR
+      String C_OBSERVACIONES
+      String C_SAVE_BUTTON
+      String C_HOME
+      String C_GUARDADO_EXITOSO
+      WebElement getCDateSelector(WebDriver)
+      WebElement getCIdPatientSelector(WebDriver)
+      WebElement getCIdDoctorSelector(WebDriver)
+      WebElement getCObservacionesSelector(WebDriver)
+      WebElement getCSaveButtonSelector(WebDriver)
+      WebElement getCHomeButtonSelector(WebDriver)
+      WebElement getCSuccessMessage(WebDriver)
+
+!ENTRY org.testng.eclipse 1 0 2017-04-06 23:40:07.794
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:util [in src/test/java [in test]]
+  HerokuappConstant.java
+    package util
+    class HerokuappConstant
+      String BASE_UI_URL
+      long Standard_Wait
+      HerokuappConstant()
+      static String getBase()
+      long getStandardWait()
+
+!ENTRY org.testng.eclipse 1 0 2017-04-06 23:40:08.026
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\eclipse\plugins\org.testng.eclipse_6.11.0.201703011520\lib\testng-remote.jar C:\Users\grivera\workspace\test\target\test-classes C:\Users\grivera\workspace\test\target\classes C:\Users\grivera\.m2\repository\junit\junit\4.12\junit-4.12.jar C:\Users\grivera\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-java\2.39.0\selenium-java-2.39.0.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-android-driver\2.39.0\selenium-android-driver-2.39.0.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-htmlunit-driver\2.39.0\selenium-htmlunit-driver-2.39.0.jar C:\Users\grivera\.m2\repository\net\sourceforge\htmlunit\htmlunit\2.13\htmlunit-2.13.jar C:\Users\grivera\.m2\repository\xalan\xalan\2.7.1\xalan-2.7.1.jar C:\Users\grivera\.m2\repository\xalan\serializer\2.7.1\serializer-2.7.1.jar C:\Users\grivera\.m2\repository\commons-collections\commons-collections\3.2.1\commons-collections-3.2.1.jar C:\Users\grivera\.m2\repository\org\apache\commons\commons-lang3\3.1\commons-lang3-3.1.jar C:\Users\grivera\.m2\repository\org\apache\httpcomponents\httpmime\4.3.1\httpmime-4.3.1.jar C:\Users\grivera\.m2\repository\net\sourceforge\htmlunit\htmlunit-core-js\2.13\htmlunit-core-js-2.13.jar C:\Users\grivera\.m2\repository\xerces\xercesImpl\2.11.0\xercesImpl-2.11.0.jar C:\Users\grivera\.m2\repository\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar C:\Users\grivera\.m2\repository\net\sourceforge\nekohtml\nekohtml\1.9.19\nekohtml-1.9.19.jar C:\Users\grivera\.m2\repository\net\sourceforge\cssparser\cssparser\0.9.11\cssparser-0.9.11.jar C:\Users\grivera\.m2\repository\org\w3c\css\sac\1.3\sac-1.3.jar C:\Users\grivera\.m2\repository\commons-logging\commons-logging\1.1.3\commons-logging-1.1.3.jar C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-websocket\8.1.12.v20130726\jetty-websocket-8.1.12.v20130726.jar C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-util\8.1.12.v20130726\jetty-util-8.1.12.v20130726.jar C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-io\8.1.12.v20130726\jetty-io-8.1.12.v20130726.jar C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-http\8.1.12.v20130726\jetty-http-8.1.12.v20130726.jar C:\Users\grivera\.m2\repository\org\apache\httpcomponents\httpclient\4.3.1\httpclient-4.3.1.jar C:\Users\grivera\.m2\repository\org\apache\httpcomponents\httpcore\4.3\httpcore-4.3.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\2.39.0\selenium-firefox-driver-2.39.0.jar C:\Users\grivera\.m2\repository\commons-io\commons-io\2.2\commons-io-2.2.jar C:\Users\grivera\.m2\repository\org\apache\commons\commons-exec\1.1\commons-exec-1.1.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\2.39.0\selenium-ie-driver-2.39.0.jar C:\Users\grivera\.m2\repository\net\java\dev\jna\jna\3.4.0\jna-3.4.0.jar C:\Users\grivera\.m2\repository\net\java\dev\jna\platform\3.4.0\platform-3.4.0.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-iphone-driver\2.39.0\selenium-iphone-driver-2.39.0.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\2.39.0\selenium-safari-driver-2.39.0.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-support\2.39.0\selenium-support-2.39.0.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-api\2.39.0\selenium-api-2.39.0.jar C:\Users\grivera\.m2\repository\org\webbitserver\webbit\0.4.14\webbit-0.4.14.jar C:\Users\grivera\.m2\repository\io\netty\netty\3.5.2.Final\netty-3.5.2.Final.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-server\2.39.0\selenium-server-2.39.0.jar C:\Users\grivera\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.48\bcprov-jdk15on-1.48.jar C:\Users\grivera\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.48\bcpkix-jdk15on-1.48.jar C:\Users\grivera\.m2\repository\mx4j\mx4j-tools\3.0.1\mx4j-tools-3.0.1.jar C:\Users\grivera\.m2\repository\org\mortbay\jetty\servlet-api-2.5\6.1.9\servlet-api-2.5-6.1.9.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\jetty-repacked\7.6.1\jetty-repacked-7.6.1.jar C:\Users\grivera\.m2\repository\net\jcip\jcip-annotations\1.0\jcip-annotations-1.0.jar C:\Users\grivera\.m2\repository\org\yaml\snakeyaml\1.8\snakeyaml-1.8.jar C:\Users\grivera\.m2\repository\commons-codec\commons-codec\1.8\commons-codec-1.8.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\2.39.0\selenium-chrome-driver-2.39.0.jar C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\2.39.0\selenium-remote-driver-2.39.0.jar C:\Users\grivera\.m2\repository\cglib\cglib-nodep\2.1_3\cglib-nodep-2.1_3.jar C:\Users\grivera\.m2\repository\org\json\json\20080701\json-20080701.jar C:\Users\grivera\.m2\repository\org\testng\testng\6.9.10\testng-6.9.10.jar C:\Users\grivera\.m2\repository\com\beust\jcommander\1.48\jcommander-1.48.jar C:\Users\grivera\.m2\repository\org\beanshell\bsh\2.0b4\bsh-2.0b4.jar C:\Users\grivera\.m2\repository\com\google\guava\guava\18.0\guava-18.0.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 62054 -protocol json -d C:\Users\grivera\workspace\test\test-output C:\Users\grivera\AppData\Local\Temp\testng-eclipse-1451096112\testng-customsuite.xml
+java -ea -classpath C:\eclipse\plugins\org.testng.eclipse_6.11.0.201703011520\lib\testng-remote.jar:C:\Users\grivera\workspace\test\target\test-classes:C:\Users\grivera\workspace\test\target\classes:C:\Users\grivera\.m2\repository\junit\junit\4.12\junit-4.12.jar:C:\Users\grivera\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-java\2.39.0\selenium-java-2.39.0.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-android-driver\2.39.0\selenium-android-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-htmlunit-driver\2.39.0\selenium-htmlunit-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\net\sourceforge\htmlunit\htmlunit\2.13\htmlunit-2.13.jar:C:\Users\grivera\.m2\repository\xalan\xalan\2.7.1\xalan-2.7.1.jar:C:\Users\grivera\.m2\repository\xalan\serializer\2.7.1\serializer-2.7.1.jar:C:\Users\grivera\.m2\repository\commons-collections\commons-collections\3.2.1\commons-collections-3.2.1.jar:C:\Users\grivera\.m2\repository\org\apache\commons\commons-lang3\3.1\commons-lang3-3.1.jar:C:\Users\grivera\.m2\repository\org\apache\httpcomponents\httpmime\4.3.1\httpmime-4.3.1.jar:C:\Users\grivera\.m2\repository\net\sourceforge\htmlunit\htmlunit-core-js\2.13\htmlunit-core-js-2.13.jar:C:\Users\grivera\.m2\repository\xerces\xercesImpl\2.11.0\xercesImpl-2.11.0.jar:C:\Users\grivera\.m2\repository\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar:C:\Users\grivera\.m2\repository\net\sourceforge\nekohtml\nekohtml\1.9.19\nekohtml-1.9.19.jar:C:\Users\grivera\.m2\repository\net\sourceforge\cssparser\cssparser\0.9.11\cssparser-0.9.11.jar:C:\Users\grivera\.m2\repository\org\w3c\css\sac\1.3\sac-1.3.jar:C:\Users\grivera\.m2\repository\commons-logging\commons-logging\1.1.3\commons-logging-1.1.3.jar:C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-websocket\8.1.12.v20130726\jetty-websocket-8.1.12.v20130726.jar:C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-util\8.1.12.v20130726\jetty-util-8.1.12.v20130726.jar:C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-io\8.1.12.v20130726\jetty-io-8.1.12.v20130726.jar:C:\Users\grivera\.m2\repository\org\eclipse\jetty\jetty-http\8.1.12.v20130726\jetty-http-8.1.12.v20130726.jar:C:\Users\grivera\.m2\repository\org\apache\httpcomponents\httpclient\4.3.1\httpclient-4.3.1.jar:C:\Users\grivera\.m2\repository\org\apache\httpcomponents\httpcore\4.3\httpcore-4.3.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\2.39.0\selenium-firefox-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\commons-io\commons-io\2.2\commons-io-2.2.jar:C:\Users\grivera\.m2\repository\org\apache\commons\commons-exec\1.1\commons-exec-1.1.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\2.39.0\selenium-ie-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\net\java\dev\jna\jna\3.4.0\jna-3.4.0.jar:C:\Users\grivera\.m2\repository\net\java\dev\jna\platform\3.4.0\platform-3.4.0.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-iphone-driver\2.39.0\selenium-iphone-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\2.39.0\selenium-safari-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-support\2.39.0\selenium-support-2.39.0.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-api\2.39.0\selenium-api-2.39.0.jar:C:\Users\grivera\.m2\repository\org\webbitserver\webbit\0.4.14\webbit-0.4.14.jar:C:\Users\grivera\.m2\repository\io\netty\netty\3.5.2.Final\netty-3.5.2.Final.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-server\2.39.0\selenium-server-2.39.0.jar:C:\Users\grivera\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.48\bcprov-jdk15on-1.48.jar:C:\Users\grivera\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.48\bcpkix-jdk15on-1.48.jar:C:\Users\grivera\.m2\repository\mx4j\mx4j-tools\3.0.1\mx4j-tools-3.0.1.jar:C:\Users\grivera\.m2\repository\org\mortbay\jetty\servlet-api-2.5\6.1.9\servlet-api-2.5-6.1.9.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\jetty-repacked\7.6.1\jetty-repacked-7.6.1.jar:C:\Users\grivera\.m2\repository\net\jcip\jcip-annotations\1.0\jcip-annotations-1.0.jar:C:\Users\grivera\.m2\repository\org\yaml\snakeyaml\1.8\snakeyaml-1.8.jar:C:\Users\grivera\.m2\repository\commons-codec\commons-codec\1.8\commons-codec-1.8.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\2.39.0\selenium-chrome-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\2.39.0\selenium-remote-driver-2.39.0.jar:C:\Users\grivera\.m2\repository\cglib\cglib-nodep\2.1_3\cglib-nodep-2.1_3.jar:C:\Users\grivera\.m2\repository\org\json\json\20080701\json-20080701.jar:C:\Users\grivera\.m2\repository\org\testng\testng\6.9.10\testng-6.9.10.jar:C:\Users\grivera\.m2\repository\com\beust\jcommander\1.48\jcommander-1.48.jar:C:\Users\grivera\.m2\repository\org\beanshell\bsh\2.0b4\bsh-2.0b4.jar:C:\Users\grivera\.m2\repository\com\google\guava\guava\18.0\guava-18.0.jar org.testng.remote.RemoteTestNG -serport 62054 -protocol json -d C:\Users\grivera\workspace\test\test-output C:\Users\grivera\AppData\Local\Temp\testng-eclipse-1451096112\testng-customsuite.xml

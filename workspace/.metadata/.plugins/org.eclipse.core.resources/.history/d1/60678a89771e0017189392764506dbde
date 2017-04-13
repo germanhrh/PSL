@@ -1,0 +1,278 @@
+package herokuapp;
+
+
+import java.util.Calendar;
+import java.util.Date;
+import java.text.SimpleDateFormat;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+//import org.junit.Assert;
+import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.TimeoutException;
+import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+import actions.Action;
+import util.HerokuappConstant;
+import config.Config;
+import page.AddCita;
+import page.AddDoctor;
+import page.AddPaciente;
+//import page.AddDoctor;
+
+
+
+public class BasicTest {
+	
+	private WebDriver _driver;
+	private StringBuilder verificationErrors = new StringBuilder();
+	
+	
+	private HerokuappConstant _HerokuppConstant = new HerokuappConstant();
+
+	private Action action = new Action();
+	private Logger logger = Logger.getAnonymousLogger();
+	private AddDoctor _AddDoctor = new AddDoctor();
+	private AddPaciente _AddPatient = new AddPaciente();
+	private AddCita _AddCita = new AddCita();
+	
+	
+	public static final String DATE_FORMAT_NOW = "yyyy-MM-dd HH:mm:ss";
+	
+	
+	//Scenario: User should be able to Add appointment
+	private final String DOCTOR_NAME = "PEDRO";
+	private final String DOCTOR_LASTNAME = "PEREZ";
+	private final String DOCTOR_TELEPHONE = "4638189";
+	private final String DOCTOR_ID_TYPE= "Cédula de Ciudadania";
+	//private final String DOCTOR_ID= "1234567";
+	
+	private final String PATIENT_NAME = "PABLO";
+	private final String PATIENT_LASTNAME = "LOPEZ";
+	private final String PATIENT_TELEPHONE = "4638188";
+	private final String PATIENT_ID_TYPE= "Cédula de Ciudadania";
+	//private final String PATIENT_ID= "1234568";
+	
+	//private final String CITA_PATIENT = "1234568";
+	//private final String CITA_DOCTOR = "1234567";
+	//private final String CITA_DATE = "04/20/2017";
+	private final String CITA_OBSERVA= "Cédula de Ciudadania";
+	
+	private final int OPCIONADDOCTOR= 1;
+	private final int OPCIONADDPATIENT= 2;
+	private final int OPCIONADDCITA= 3;
+	
+
+	
+	public WebDriver getDriver() {
+			
+		if (_driver == null){
+			Config TestConfig = new Config();
+			TestConfig.SetUp(HerokuappConstant.getBase());	
+			_driver = TestConfig.getValueDriver();
+			return _driver;			
+		}
+			return _driver;
+		}
+	
+
+	@BeforeTest(enabled=true)
+	 public void setUp() throws TimeoutException {
+		Config TestConfig = new Config();
+		TestConfig.SetUp(HerokuappConstant.getBase());	
+		_driver = TestConfig.getValueDriver();
+		
+		
+	  }
+	
+	
+	 @AfterTest(enabled=false)
+	  public void tearDown() throws TimeoutException {	
+		 closeWebDriver();
+	    String verificationErrorString = verificationErrors.toString();
+	    if (!"".equals(verificationErrorString)) {
+	    	org.testng.Assert.fail(verificationErrorString);
+	      
+	    }
+	  }
+
+	 public void closeWebDriver()
+	 {
+		 _driver.quit();
+		 _driver = null;
+	 }
+	
+	 
+	  @Test(enabled=true)
+	  public void testFullRegression() throws InterruptedException {
+		  try{
+			  Calendar cal = Calendar.getInstance();
+			  SimpleDateFormat sdf = new SimpleDateFormat(DATE_FORMAT_NOW);
+			  String DoctorId = sdf.format(cal.getTime());
+			  String PatientId = sdf.format(cal.getTime());
+			  
+			  Date dt = new Date();
+			  cal.setTime(dt);
+			  cal.add(Calendar.DATE, 10);
+			  dt = cal.getTime();
+			  
+			  String Fecha = sdf.format(dt);
+
+			  
+			  _driver = getDriver();
+			  
+			  _driver.manage().window().maximize();	
+			  
+//			  action.ClickMenuInicio(OPCIONADDOCTOR, _driver);
+//			  
+//			  action.AddDoctor(this.DOCTOR_NAME, this.DOCTOR_LASTNAME, 
+//					  DoctorId, this.DOCTOR_TELEPHONE, this.DOCTOR_ID_TYPE, _driver);
+//			  
+//			  Assert.assertEquals(_AddDoctor.getDSuccessMessage(_driver).getText(), "Datos guardados correctamente.");
+//			  
+//			  action.ClickInicio(_driver);
+////			  Thread.sleep(4000);
+//			  
+//			  action.ClickMenuInicio(OPCIONADDPATIENT, _driver);
+//			  
+//			  action.AddPaciente(this.PATIENT_NAME, this.PATIENT_LASTNAME, 
+//					  PatientId, this.PATIENT_TELEPHONE, this.PATIENT_ID_TYPE, _driver);
+//			  
+//			  Assert.assertEquals(_AddPatient.getPSuccessMessage(_driver).getText(), "Datos guardados correctamente.");
+//			  
+//			  action.ClickInicio(_driver);
+////			  Thread.sleep(4000);
+//			  
+			  action.ClickMenuInicio(OPCIONADDCITA, _driver);
+			  
+			  action.AddCita(Fecha, DoctorId, PatientId, this.CITA_OBSERVA, _driver);
+			  
+			  Assert.assertEquals(_AddCita.getCSuccessMessage(_driver).getText(), "Datos guardados correctamente.");
+
+			  
+			  
+		  }
+		  	  
+		  catch (TimeoutException testFullRegressionErrorTime){
+			
+			  testFullRegressionErrorTime.printStackTrace();
+				  logger.log(Level.SEVERE, "Exception: " +  _HerokuppConstant.getStandardWait() 
+				  								+ " seconds", testFullRegressionErrorTime);
+				  closeWebDriver();
+		  }	  
+		  
+		  closeWebDriver();
+	  }
+	 
+	  /*
+		//Test Execution  Add Doctor
+		  @Test(enabled=true)
+		  public void testaddDoctor() throws InterruptedException {
+			  try{
+				  Calendar cal = Calendar.getInstance();
+				  SimpleDateFormat sdf = new SimpleDateFormat(DATE_FORMAT_NOW);
+				  String DoctorId = sdf.format(cal.getTime());
+				  
+				  _driver = getDriver();
+				  
+				  _driver.manage().window().maximize();	
+				  
+				  action.ClickMenuInicio(OPCIONADDOCTOR, _driver);
+				  
+				  action.AddDoctor(this.DOCTOR_NAME, this.DOCTOR_LASTNAME, 
+						  DoctorId, this.DOCTOR_TELEPHONE, this.DOCTOR_ID_TYPE, _driver);
+				  
+				  Assert.assertEquals(_AddDoctor.getDSuccessMessage(_driver).getText(), "Datos guardados correctamente.");
+				  
+			  }
+			  	  
+			  catch (TimeoutException AddDoctorErrorTime){
+				
+				  AddDoctorErrorTime.printStackTrace();
+					  logger.log(Level.SEVERE, "Exception: " +  _HerokuppConstant.getStandardWait() 
+					  								+ " seconds", AddDoctorErrorTime);
+					  closeWebDriver();
+			  }	  
+			  
+			  closeWebDriver();
+			 
+		  }
+		  
+		
+		  /* Add Patient
+		  @Test(enabled=true)
+		  public void testAddPatient() throws InterruptedException {
+			  try{
+				  _driver = getDriver();
+				  
+				  _driver.manage().window().maximize();	
+				  
+				  action.ClickMenuInicio(OPCIONADDPATIENT, _driver);
+				  
+				  action.AddPaciente(this.PATIENT_NAME, this.PATIENT_LASTNAME, 
+						  this.PATIENT_ID, this.PATIENT_TELEPHONE, this.PATIENT_ID_TYPE, _driver);
+				  
+
+			  }
+			  	  
+			  catch (TimeoutException AddPatientErrorTime){
+				
+				  AddPatientErrorTime.printStackTrace();
+					  logger.log(Level.SEVERE, "Exception:  " +  _HerokuppConstant.getStandardWait() 
+					  								+ " seconds", AddPatientErrorTime);	
+					  closeWebDriver();
+			  }
+			  
+			  catch (NoSuchElementException AddPatientErrorElement){
+					
+				  AddPatientErrorElement.printStackTrace();
+				  logger.log(Level.SEVERE, "Exception:  " +  _HerokuppConstant.getStandardWait() 
+				  								+ " seconds", AddPatientErrorElement);				  
+			  }
+			 
+			 
+		  }
+		  
+		  
+		  Add appointment
+		  @Test(enabled=true)
+		  public void testaddCita() throws InterruptedException {
+			  try{
+				  _driver = getDriver();
+				  
+				  _driver.manage().window().maximize();	
+				  
+				  
+				  
+				  action.AddDoctor(this.DOCTOR_NAME, this.DOCTOR_LASTNAME, 
+						  this.DOCTOR_ID, this.DOCTOR_TELEPHONE, this.DOCTOR_ID_TYPE, _driver);
+				  
+				  action.AddCita(this.CITA_DATE, this.CITA_DOCTOR, this.CITA_PATIENT, this.CITA_OBSERVA, _driver);
+				 
+//				  (this.DOCTOR_NAME, this.DOCTOR_LASTNAME, 
+//						  this.DOCTOR_ID, this.DOCTOR_TELEPHONE, this.DOCTOR_ID_TYPE, _driver);
+//				  
+//				  Assert.assertEquals(_AddDoctor.getFlightsPanel(_driver).isDisplayed(), true);
+				  
+			  }
+			  	  
+			  catch (TimeoutException AddDoctorErrorTime){
+				
+				  AddDoctorErrorTime.printStackTrace();
+					  logger.log(Level.SEVERE, "Exception: " +  _HerokuppConstant.getStandardWait() 
+					  								+ " seconds", AddDoctorErrorTime);
+					  closeWebDriver();
+			  }	  
+			  
+			  closeWebDriver();
+			 
+		  }
+		  
+		   */
+
+
+}

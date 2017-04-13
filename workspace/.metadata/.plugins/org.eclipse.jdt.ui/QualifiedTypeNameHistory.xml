@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="util.ExpediaContants"/>
+<fullyQualifiedTypeName name="config.Config"/>
+<fullyQualifiedTypeName name="page.MainSearch"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="util.ExpediaConstant"/>
+<fullyQualifiedTypeName name="org.junit.Assert"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.NoSuchElementException"/>
+<fullyQualifiedTypeName name="page.FlightsSearch"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.support.ui.Select"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.firefox.FirefoxDriver"/>
+<fullyQualifiedTypeName name="page.Inicio"/>
+<fullyQualifiedTypeName name="page.AddCita"/>
+<fullyQualifiedTypeName name="org.openqa.jetty.html.Break"/>
+<fullyQualifiedTypeName name="actions.Action"/>
+<fullyQualifiedTypeName name="org.testng.Assert"/>
+<fullyQualifiedTypeName name="page.AddDoctor"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="java.lang.Thread"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,53 @@
+package page;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class Inicio {
+
+	private final String I_ADD_DOCTOR = "[href='addDoctor']";	
+	private final String I_ADD_PATIENT = "[href='addDoctor']";	
+	private final String I_ADD_ROOM = "[href='addRoom']";	
+	private final String I_ADD_HOSPITAL = "[href='addHospital']";	
+	private final String I_HOSPITAL_LIST = "[href='hospitalList']";	
+	private final String I_APPOINTMENTSCHEDULING = "[href='appointmentscheduling']";	
+	
+	private final String I_HOME = "[href='home']";
+	
+	public WebElement getIAddDoctorSelector(WebDriver driver){
+		
+		return driver.findElement(By.cssSelector(I_ADD_DOCTOR));
+	}
+
+	public WebElement getIAddPatientSelector(WebDriver driver){
+		
+		return driver.findElement(By.cssSelector(I_ADD_PATIENT));
+	}
+	
+	public WebElement getIAddRoomSelector(WebDriver driver){
+		
+		return driver.findElement(By.cssSelector(I_ADD_ROOM));
+	}
+
+	public WebElement getIAddHospitalSelector(WebDriver driver){
+		
+		return driver.findElement(By.cssSelector(I_ADD_HOSPITAL));
+	}
+	
+	public WebElement getIHospitalListSelector(WebDriver driver){
+		
+		return driver.findElement(By.cssSelector(I_HOSPITAL_LIST));
+	}
+
+	public WebElement getIAppointmentSchedulingSelector(WebDriver driver){
+	
+	return driver.findElement(By.cssSelector(I_APPOINTMENTSCHEDULING));
+	}
+	
+	public WebElement getIAddHomeSelector(WebDriver driver){
+		
+		return driver.findElement(By.cssSelector(I_HOME));
+	}
+	
+}

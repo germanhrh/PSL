@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename field &apos;HIGHEST_PRICE&apos; in &apos;com.expedia.TripSearcherSuiteCase&apos; to &apos;AIRLINE_NAME&apos;&#x0D;&#x0A;- Original project: &apos;test&apos;&#x0D;&#x0A;- Original element: &apos;com.expedia.TripSearcherSuiteCase.HIGHEST_PRICE&apos;&#x0D;&#x0A;- Renamed element: &apos;com.expedia.TripSearcherSuiteCase.AIRLINE_NAME&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" delegate="false" deprecate="false" description="Rename field &apos;HIGHEST_PRICE&apos;" flags="589826" getter="false" id="org.eclipse.jdt.ui.rename.field" input="/src\/test\/java&lt;com.expedia{TripSearcherSuiteCase.java[TripSearcherSuiteCase^HIGHEST_PRICE" name="AIRLINE_NAME" references="true" setter="false" stamp="1466992245584" textual="false" version="1.0"/>
+</session>

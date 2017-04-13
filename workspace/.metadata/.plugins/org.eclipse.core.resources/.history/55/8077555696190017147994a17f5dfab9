@@ -1,0 +1,138 @@
+package page;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class AddDoctor {
+	
+	
+	// UI Elements Path
+	
+			
+			//Radio Button
+			//private final String ROUNDTRIP_OPTION = "[id='flight-type-round-trip']";
+			
+			//TextBox
+			private final String D_NAME = "[id='name']";	
+			private final String D_LAST_NAME = "[id='last_name']";	
+			private final String D_TELEPHONE = "[id='telephone']";			
+			private final String D_IDENTIFICATION = "[id='identification']";
+			private final String D_GUARDADO_EXITOSO = ".panel-body > p";
+			
+			
+			//Toggle
+			//private final String SHOW_OPTIONS = "[id='flights-options-pane-toggle']";
+		
+			//CheckBox
+			//private final String NONSTOP_CHECKBOX = "[id='nonstopFlights']";	
+					
+			//ComboBox	
+			private final String D_IDENTIFICATION_TYPE = "[id='identification_type']";
+					
+			//Button	
+			private final String D_SAVE_BUTTON = "[class='btn btn-primary pull-right']";
+			
+			//Loaders
+			//private final String OUTBOUND_SPINNER = "[id='outboundSpinner']";
+			
+			//Label
+//			private final String D_PRIMARY_MESSAGE = "[class='primary-msg']";
+			
+			//Panel
+			//private final String MAIN_PANEL = "[role='main']";
+			//private final String AIRLINE_NAME = "[class='secondary truncate']";
+			
+			private final String D_HOME = "[href='home']";
+				
+		
+		//Elements
+			
+		public WebElement getDNameSelector(WebDriver driver){
+			
+			return driver.findElement(By.cssSelector(D_NAME));
+		}
+			
+		public WebElement getDLastNameSelector(WebDriver driver){
+			
+			return driver.findElement(By.cssSelector(D_LAST_NAME));
+		}
+		
+		public WebElement getDTelephoneSelector(WebDriver driver){
+			
+			return driver.findElement(By.cssSelector(D_TELEPHONE));
+		}
+		
+		public WebElement getDIdentificationSelector(WebDriver driver){
+			
+			return driver.findElement(By.cssSelector(D_IDENTIFICATION));
+		}
+		
+		public WebElement getDdentificationTypeSelector(WebDriver driver){
+			
+			return driver.findElement(By.cssSelector(D_IDENTIFICATION_TYPE));
+		}
+		
+		public void getDSaveButtonSelector(WebDriver driver){
+			
+			driver.findElement(By.cssSelector(D_SAVE_BUTTON));
+		
+		}
+		
+		public WebElement getDHomeButtonSelector(WebDriver driver){
+			
+			return driver.findElement(By.cssSelector(D_HOME));
+		
+		}
+		
+		public WebElement getDSuccessMessage(WebDriver driver){
+			
+			return driver.findElement(By.cssSelector(D_GUARDADO_EXITOSO));
+		
+		}
+		
+		
+		//public WebElement getLoadingSelector(WebDriver driver){
+			
+		//	return driver.findElement(By.cssSelector(OUTBOUND_SPINNER));
+		//}
+		
+//		public WebElement getPrimaryMsgSelector(WebDriver driver){
+//			
+//			return driver.findElement(By.cssSelector(PRIMARY_MESSAGE));
+//		}
+//		
+//		public String getPrimaryMsgSelectorCssPath(){
+//			return this.PRIMARY_MESSAGE;
+//		}
+		
+//		public WebElement getToggle(WebDriver driver){
+//			
+//			return driver.findElement(By.cssSelector(SHOW_OPTIONS));
+//		}
+//		
+//		public WebElement getNonStopCheckBox(WebDriver driver){
+//			return driver.findElement(By.cssSelector(NONSTOP_CHECKBOX));
+//		}
+//		
+//		public WebElement getAirlineComboBox(WebDriver driver){
+//			return driver.findElement(By.cssSelector(AIRLINE_COMBOBOX));
+//		}
+//		
+//		public WebElement getSortComboBox(WebDriver driver){
+//			return driver.findElement(By.cssSelector(SORT_COMBOBOX));
+//		}		
+//		
+//		public WebElement getFlightsPanel(WebDriver driver){
+//			return driver.findElement(By.cssSelector(MAIN_PANEL));
+//		}	
+//		
+//		public WebElement getFirstAirlineElement(WebDriver driver){
+//			return driver.findElements((By.cssSelector(AIRLINE_NAME))).get(0);
+//		}
+
+		
+		
+		
+
+}

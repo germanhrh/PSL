@@ -1,0 +1,161 @@
+package page;
+
+//import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+
+public class AddPaciente {
+	
+	//MainSearch UI Elements
+	
+		//Panel
+//		private final String FLIGHT_TYPE_PANEL = "[data-lobtab='flight']";
+//		private final String ROUNDTRIP_TYPE_PANEL = "[name='type-roundtrip']";
+		
+		//TextBox
+		
+		private final String P_NAME = "[name='name']";	
+		private final String P_LAST_NAME = "[name='last_name']";	
+		private final String P_TELEPHONE = "[name='telephone']";			
+		private final String P_IDENTIFICATION = "[name='identification']";
+		private final String P_GUARDADO_EXITOSO = ".panel-body > p";
+		
+//		
+//		
+//		private final String FLYING_FROM_TEXTBOX = "[id='flight-origin']";
+//		private final String FLYING_TO_TEXTBOX = "[id='flight-destination']";
+//		private final String FLY_DEPARTURE_DATE_TEXTBOX = "[id='flight-departing']";
+//		private final String FLY_RETURN_DATE_TEXTBOX = "[id='flight-returning']";
+		
+		//CheckBox
+		private final String P_SALUD_PREPAGADA = "[name='prepaid']";
+//		
+//		private final String NONSTOP_CHECKBOX = "[id='advanced-flight-nonstop']";
+//		private final String ADD_CAR_CHECKBOX = "[id='flight-add-car-checkbox']";
+				
+		//ComboBox	
+		private final String P_IDENTIFICATION_TYPE = "[name='identification_type']";
+		
+//		private final String AIRLINE_COMBOBOX = "[id='flight-advanced-preferred-airline']";
+				
+		//Button	
+		private final String P_SAVE_BUTTON = "[class='btn btn-primary pull-right']";
+		
+//		private final String SEARCH_BUTTON = "[id='search-button']";
+		
+		//Loaders
+//		private final String OUTBOUND_SPINNER = "[id='outboundSpinner']";
+		
+		//Label
+//		private final String PRIMARY_MESSAGE = "[class='primary-msg']";
+		
+		private final String P_HOME = "[href='home']";
+			
+	
+	//Selectors
+		
+		public WebElement getPNameSelector(WebDriver driver){
+			
+		return driver.findElement(By.cssSelector(P_NAME));
+		}
+		
+		public WebElement getPLastNameSelector(WebDriver driver){
+			
+			return driver.findElement(By.cssSelector(P_LAST_NAME));
+		}
+		
+		public WebElement getPTelephoneSelector(WebDriver driver){
+			
+			return driver.findElement(By.cssSelector(P_TELEPHONE));
+		}
+		
+		public WebElement getPIdentificationSelector(WebDriver driver){
+			
+			return driver.findElement(By.cssSelector(P_IDENTIFICATION));
+		}
+
+		public WebElement getPSPrepagadaSelector(WebDriver driver){
+			
+			return driver.findElement(By.cssSelector(P_SALUD_PREPAGADA));
+		}
+		
+		public WebElement getPIdentificationTypeSelector(WebDriver driver){
+			
+			return driver.findElement(By.cssSelector(P_IDENTIFICATION_TYPE));
+		}
+		
+		public WebElement getPSaveButtonSelector(WebDriver driver){
+			
+			return driver.findElement(By.cssSelector(P_SAVE_BUTTON));
+		}
+		
+		public WebElement getPHomeButtonSelector(WebDriver driver){
+			
+			return driver.findElement(By.cssSelector(P_HOME));
+		
+		}
+		
+		public WebElement getPSuccessMessage(WebDriver driver){
+			
+			return driver.findElement(By.cssSelector(P_GUARDADO_EXITOSO));
+		
+		}
+		
+		
+//	public WebElement getFlightTypePanelSelector(WebDriver driver){
+//			
+//		return driver.findElement(By.cssSelector(FLIGHT_TYPE_PANEL));
+//	}
+//	
+//	public WebElement getFlightTypeOptionSelector(WebDriver driver){
+//		
+//		return driver.findElement(By.cssSelector(ROUNDTRIP_TYPE_PANEL));
+//	}
+//		
+//	public WebElement getFlyingFromSelector(WebDriver driver){
+//		
+//		return driver.findElement(By.cssSelector(FLYING_FROM_TEXTBOX));
+//	}
+//	
+//	public WebElement getFlyingToSelector(WebDriver driver){
+//		
+//		return driver.findElement(By.cssSelector(FLYING_TO_TEXTBOX));
+//	}
+//	
+//	public WebElement getFlyDepartureDateSelector(WebDriver driver){
+//		
+//		return driver.findElement(By.cssSelector(FLY_DEPARTURE_DATE_TEXTBOX));
+//	}
+//	
+//	public WebElement getFlyReturnDateSelector(WebDriver driver){
+//		
+//		return driver.findElement(By.cssSelector(FLY_RETURN_DATE_TEXTBOX));
+//	}
+//	
+//	public WebElement getFlySearchButtonSelector(WebDriver driver){
+//		
+//		return driver.findElement(By.cssSelector(SEARCH_BUTTON));
+//	}
+//	
+//	public WebElement getLoadingSelector(WebDriver driver){
+//		
+//		return driver.findElement(By.cssSelector(OUTBOUND_SPINNER));
+//	}
+//	
+//	public WebElement getPrimaryMsgSelector(WebDriver driver){
+//		
+//		return driver.findElement(By.cssSelector(PRIMARY_MESSAGE));
+//	}
+//	
+//	public String getPrimaryMsgSelectorCssPath(){
+//		return this.PRIMARY_MESSAGE;
+//	}
+	
+	
+	
+	
+
+}

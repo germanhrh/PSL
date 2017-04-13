@@ -1,0 +1,5 @@
+<test name="TripSearcherSuiteCase">
+	<classes>
+	  <class name ="com.expedia.TripSearcherSuiteCase" />
+	</classes>
+</test>

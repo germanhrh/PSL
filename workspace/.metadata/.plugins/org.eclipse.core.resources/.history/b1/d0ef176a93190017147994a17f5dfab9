@@ -1,0 +1,250 @@
+package herokuapp;
+
+
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+//import org.junit.Assert;
+import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.TimeoutException;
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+import actions.Action;
+import util.HerokuappConstant;
+import config.Config;
+//import page.AddDoctor;
+
+
+
+public class BasicTest {
+	
+	private WebDriver _driver;
+	private StringBuilder verificationErrors = new StringBuilder();
+	
+	
+	private HerokuappConstant _HerokuppConstant = new HerokuappConstant();
+
+	private Action action = new Action();
+	private Logger logger = Logger.getAnonymousLogger();
+//	private AddDoctor _AddDoctor = new AddDoctor();
+	
+	//Examples Feature As a user I can search for a round-trip flight from Bogota to San Francisco	
+	
+	//Scenario: User should be able to search a trip flight using only required fields
+	private final String DOCTOR_NAME = "PEDRO";
+	private final String DOCTOR_LASTNAME = "PEREZ";
+	private final String DOCTOR_TELEPHONE = "4638189";
+	private final String DOCTOR_ID_TYPE= "Cédula de Ciudadania";
+	private final String DOCTOR_ID= "1234567";
+	
+	private final String PATIENT_NAME = "PABLO";
+	private final String PATIENT_LASTNAME = "LOPEZ";
+	private final String PATIENT_TELEPHONE = "4638188";
+	private final String PATIENT_ID_TYPE= "Cédula de Ciudadania";
+	private final String PATIENT_ID= "1234568";
+	
+	private final String CITA_PATIENT = "1234568";
+	private final String CITA_DOCTOR = "1234567";
+	private final String CITA_DATE = "04/20/2017";
+	private final String CITA_OBSERVA= "Cédula de Ciudadania";
+	
+	
+//	//Scenario: User should be able to sort the search results
+//	private final String FILTER_LOWEST_PRICE = "Price (Lowest)";
+//	private final String FILTER_HIGHEST_PRICE = "Price (Highest)";
+//	private final String AIRLINE_NAME = "  Lufthansa  ";
+//	private final String FILTER_SHORTEST_DURATION = "Duration (Shortest)";
+//	private final String FILTER_LONGEST_DURATION = "Duration (Longest)";
+//	
+	
+	
+	public WebDriver getDriver() {
+			
+		if (_driver == null){
+			Config TestConfig = new Config();
+			TestConfig.SetUp(HerokuappConstant.getBase());	
+			_driver = TestConfig.getValueDriver();
+			return _driver;			
+		}
+			return _driver;
+		}
+	
+
+	@BeforeTest(enabled=true)
+	 public void setUp() throws TimeoutException {
+		Config TestConfig = new Config();
+		TestConfig.SetUp(HerokuappConstant.getBase());	
+		_driver = TestConfig.getValueDriver();
+		
+		
+	  }
+	
+	
+	 @AfterTest(enabled=false)
+	  public void tearDown() throws TimeoutException {	
+		 closeWebDriver();
+	    String verificationErrorString = verificationErrors.toString();
+	    if (!"".equals(verificationErrorString)) {
+	    	org.testng.Assert.fail(verificationErrorString);
+	      
+	    }
+	  }
+
+	 public void closeWebDriver()
+	 {
+		 _driver.quit();
+		 _driver = null;
+	 }
+	 
+	//Test Execution
+	  @Test(enabled=true)
+	  public void testaddDoctor() throws InterruptedException {
+		  try{
+			  _driver = getDriver();
+			  
+			  _driver.manage().window().maximize();	
+			  
+			  action.AddDoctor(this.DOCTOR_NAME, this.DOCTOR_LASTNAME, 
+					  this.DOCTOR_ID, this.DOCTOR_TELEPHONE, this.DOCTOR_ID_TYPE, _driver);
+			  
+//			  Assert.assertEquals(_AddDoctor.getFlightsPanel(_driver).isDisplayed(), true);
+			  
+		  }
+		  	  
+		  catch (TimeoutException AddDoctorErrorTime){
+			
+			  AddDoctorErrorTime.printStackTrace();
+				  logger.log(Level.SEVERE, "Exception: " +  _HerokuppConstant.getStandardWait() 
+				  								+ " seconds", AddDoctorErrorTime);
+				  closeWebDriver();
+		  }	  
+		  
+		  closeWebDriver();
+		 
+	  }
+	  
+	  @Test(enabled=true)
+	  public void testAddPatient() throws InterruptedException {
+		  try{
+			  _driver = getDriver();
+			  
+			  _driver.manage().window().maximize();	
+			  
+			  action.AddPaciente(this.PATIENT_NAME, this.PATIENT_LASTNAME, 
+					  this.PATIENT_ID, this.PATIENT_TELEPHONE, this.PATIENT_ID_TYPE, _driver);
+			  
+//			  (this.DOCTOR_NAME, this.DOCTOR_LASTNAME, this.DOCTOR_TELEFONO, this.RETURNING_DATE, _driver);
+			
+//			  action.sortByHighestPrice(_driver, FILTER_HIGHEST_PRICE);
+//			  Assert.assertEquals(_AddDoctor.getFirstAirlineElement(_driver).getText(), AIRLINE_NAME);
+		  }
+		  	  
+		  catch (TimeoutException AddPatientErrorTime){
+			
+			  AddPatientErrorTime.printStackTrace();
+				  logger.log(Level.SEVERE, "Exception:  " +  _HerokuppConstant.getStandardWait() 
+				  								+ " seconds", AddPatientErrorTime);	
+				  closeWebDriver();
+		  }
+		  
+		  catch (NoSuchElementException AddPatientErrorElement){
+				
+			  AddPatientErrorElement.printStackTrace();
+			  logger.log(Level.SEVERE, "Exception:  " +  _HerokuppConstant.getStandardWait() 
+			  								+ " seconds", AddPatientErrorElement);				  
+		  }
+		 
+		 
+	  }
+	  
+	  @Test(enabled=true)
+	  public void testaddCita() throws InterruptedException {
+		  try{
+			  _driver = getDriver();
+			  
+			  _driver.manage().window().maximize();	
+			  
+			  action.AddCita(this.CITA_DATE, this.CITA_DOCTOR, this.CITA_PATIENT, this.CITA_OBSERVA, _driver);
+			 
+//			  (this.DOCTOR_NAME, this.DOCTOR_LASTNAME, 
+//					  this.DOCTOR_ID, this.DOCTOR_TELEPHONE, this.DOCTOR_ID_TYPE, _driver);
+//			  
+//			  Assert.assertEquals(_AddDoctor.getFlightsPanel(_driver).isDisplayed(), true);
+			  
+		  }
+		  	  
+		  catch (TimeoutException AddDoctorErrorTime){
+			
+			  AddDoctorErrorTime.printStackTrace();
+				  logger.log(Level.SEVERE, "Exception: " +  _HerokuppConstant.getStandardWait() 
+				  								+ " seconds", AddDoctorErrorTime);
+				  closeWebDriver();
+		  }	  
+		  
+		  closeWebDriver();
+		 
+	  }
+	  
+	  
+	  @Test(enabled=true)
+	  public void testFullRegression() throws InterruptedException {
+		  try{
+			  _driver = getDriver();
+			  
+			  _driver.manage().window().maximize();	
+			  
+			  action.AddCita(this.CITA_DATE, this.CITA_DOCTOR, this.CITA_PATIENT, this.CITA_OBSERVA, _driver);
+			 
+//			  (this.DOCTOR_NAME, this.DOCTOR_LASTNAME, 
+//					  this.DOCTOR_ID, this.DOCTOR_TELEPHONE, this.DOCTOR_ID_TYPE, _driver);
+//			  
+//			  Assert.assertEquals(_AddDoctor.getFlightsPanel(_driver).isDisplayed(), true);
+			  
+		  }
+		  	  
+		  catch (TimeoutException AddDoctorErrorTime){
+			
+			  AddDoctorErrorTime.printStackTrace();
+				  logger.log(Level.SEVERE, "Exception: " +  _HerokuppConstant.getStandardWait() 
+				  								+ " seconds", AddDoctorErrorTime);
+				  closeWebDriver();
+		  }	  
+		  
+		  closeWebDriver();
+		 
+	  }
+	  
+	  
+//	  @Test(enabled=true)
+//	  public void testSortLowestPriceSearch() throws InterruptedException {
+//		  try{
+//			  
+//			  
+//		//	  action.basicSearchTrip(this.DEPARTURE_PLACE, this.ARRIVE_PLACE, this.DEPARTING_DATE, this.RETURNING_DATE, _driver);
+//			//  Assert.assertEquals(_flightsSearch.getFlightsPanel(_driver).isDisplayed(), true);
+//		  
+//		  }
+//		  	  
+//		  catch (TimeoutException NoFirstElement){
+//			
+//				  NoFirstElement.printStackTrace();
+//				  logger.log(Level.SEVERE, "Exception: search haven't finished to load in " +  _HerokuppConstant.getStandardWait() 
+//				  								+ " seconds", NoFirstElement);	
+//				  closeWebDriver();
+//		  }
+//		  
+//		  catch (NoSuchElementException NoHighestPricetElement){
+//				
+//			  NoHighestPricetElement.printStackTrace();
+//			  logger.log(Level.SEVERE, "Exception: could not sort by Highest Price in " +  _HerokuppConstant.getStandardWait() 
+//			  								+ " seconds", NoHighestPricetElement);	
+//			  closeWebDriver();
+//		  }
+//		  closeWebDriver();
+//		 
+//	  } 
+
+}

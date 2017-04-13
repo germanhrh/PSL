@@ -1,0 +1,103 @@
+package com.expedia;
+
+
+
+
+
+import java.util.logging.Logger;
+
+import org.openqa.selenium.TimeoutException;
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+
+import actions.Action;
+import util.ExpediaConstant;
+import config.Config;
+import page.FlightsSearch;
+import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.TimeoutException;
+import org.openqa.selenium.WebDriver;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.Test;
+import actions.Action;
+import page.FlightsSearch;
+import util.ExpediaConstant;
+
+
+public class BasicTest {
+	
+	private WebDriver _driver;
+	private StringBuilder verificationErrors = new StringBuilder();
+	
+	
+	private ExpediaConstant _expediaConstant = new ExpediaConstant();
+
+	private WebDriver _driver;
+	private Action action = new Action();
+	private Logger logger = Logger.getAnonymousLogger();
+	private FlightsSearch _flightsSearch = new FlightsSearch();
+	
+	//Examples Feature As a user I can search for a round-trip flight from Bogota to San Francisco	
+	
+	//Scenario: User should be able to search a trip flight using only required fields
+	private final String DEPARTURE_PLACE = "Bogota, Colombia (BOG-El Dorado Intl.)";
+	private final String ARRIVE_PLACE = "San Francisco (and vicinity), California, United States of America";
+	private final String DEPARTING_DATE = "07/01/2016";
+	private final String RETURNING_DATE = "07/14/2016";
+	
+	//Scenario: User should be able to sort the search results
+	private final String FILTER_LOWEST_PRICE = "Price (Lowest)";
+	private final String FILTER_HIGHEST_PRICE = "Price (Highest)";
+	private final String AIRLINE_NAME = "  Lufthansa  ";
+	private final String FILTER_SHORTEST_DURATION = "Duration (Shortest)";
+	private final String FILTER_LONGEST_DURATION = "Duration (Longest)";
+	
+	
+	
+	public WebDriver getDriver() {
+			
+		if (_driver == null){
+			Config TestConfig = new Config();
+			TestConfig.SetUp(ExpediaConstant.getBase());	
+			_driver = TestConfig.getValueDriver();
+			return _driver;			
+		}
+			return _driver;
+		}
+	
+
+	@BeforeTest(enabled=true)
+	 public void setUp() throws TimeoutException {
+		Config TestConfig = new Config();
+		TestConfig.SetUp(ExpediaConstant.getBase());	
+		_driver = TestConfig.getValueDriver();
+		
+		
+	  }
+	
+	
+	 @AfterTest(enabled=false)
+	  public void tearDown() throws TimeoutException {	
+		 closeWebDriver();
+	    String verificationErrorString = verificationErrors.toString();
+	    if (!"".equals(verificationErrorString)) {
+	    	org.testng.Assert.fail(verificationErrorString);
+	      
+	    }
+	  }
+
+	 public void closeWebDriver()
+	 {
+		 _driver.quit();
+		 _driver = null;
+	 }
+
+}
